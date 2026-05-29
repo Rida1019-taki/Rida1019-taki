@@ -20,7 +20,7 @@
 <h3 align="left">Connectez-vous avec moi :</h3>
 
 <p align="left">
-<a href="https://linkedin.com/in/rida-taki" target="_blank">
+<a href="[https://linkedin.com/in/rida-taki](https://www.linkedin.com/in/rida-taki-bb44a8350/)" target="_blank">
 <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" width="40" height="40"/>
 </a>
 

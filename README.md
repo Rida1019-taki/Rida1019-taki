@@ -1,7 +1,48 @@
-# 💫 About Me:
-🔭 Je travaille actuellement sur<br>HealthCare+ : Système de Gestion Médicale<br>🌱 J’apprends actuellement Spring Boot (backend) et React.js (frontend)<br>💬 Posez-moi des questions sur Java (Spring Boot), React.js, Kotlin, Flutter, HTML, CSS et JavaScript<br>📫 Contact : takirida72@gmail.com<br>⚡ Fun fact : Je transforme le café ☕ en code et les bugs en fonctionnalités 🚀<br>
+<div align="center">
 
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
+<tr>
+<td align="left" valign="top" width="64">
 
+![RT](https://img.shields.io/badge/RT-0C447C?style=for-the-badge&logoColor=white)
+
+</td>
+<td align="left" valign="top">
+
+**Rida Taki**
+<br/>
+*Full-Stack Developer · Spring Boot & React.js*
+
+</td>
+</tr>
+</table>
+
+---
+
+🔧 **Travaille actuellement sur**
+<br/>HealthCare+ — Système de Gestion Médicale
+
+🎓 **En cours d'apprentissage**
+<br/>Spring Boot (backend) & React.js (frontend)
+
+💬 **Posez-moi des questions sur**
+<br/>
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![React](https://img.shields.io/badge/React-20232a?style=flat-square&logo=react&logoColor=61DAFB)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+
+📫 **Contact** — [takirida72@gmail.com](mailto:takirida72@gmail.com)
+
+---
+
+> ⚡ *Je transforme le café ☕ en code et les bugs en fonctionnalités 🚀*
+
+</div>
 ## 🌐 Socials:
 [![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?logo=vercel&logoColor=white)](https://rida-taki.vercel.app/) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/rida_taki_10) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rida-taki-bb44a8350/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:takirida72@gmail.com)
 

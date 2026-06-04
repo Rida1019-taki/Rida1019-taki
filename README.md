@@ -1,50 +1,44 @@
-# 🚀 Rida Taki | Software Developer
+# Rida Taki | Software Developer
 
 ---
 
-## 💼 Current Focus
-- 🏥 Building **HealthCare+** — Medical Management System
-- 🌱 Learning and improving:
+## Current Focus
+- Building HealthCare+ — Medical Management System
+- Learning and improving:
     - Spring Boot (Backend Development)
     - React.js (Frontend Development)
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 ### Backend
-- Java ☕
-- Spring Boot 🌿
+- Java
+- Spring Boot
 - REST APIs
-- Spring Security (basics)
+- Spring Security (basic knowledge)
 
 ### Frontend
-- React.js ⚛️
+- React.js
 - JavaScript (ES6+)
 - HTML5 / CSS3
-- UI Responsive Design
+- Responsive UI Design
 
 ### Mobile
-- Kotlin 📱
-- Flutter 📦
+- Kotlin
+- Flutter
 
 ---
 
-## 📫 Contact
-- ✉️ Email: **takirida72@gmail.com**
+## Contact
+- Email: takirida72@gmail.com
 
 ---
 
-## ⚡ Quote
-> “Turning ideas into scalable software solutions.”
+## Quote
+"Turning ideas into scalable software solutions."
 
 ---
-
-## 📊 Currently
-```text
-💻 Coding ██████████ 90%
-☕ Coffee ██████████ 100%
-🐞 Bugs   ████░░░░░░ 40% (work in progress 😄)
 ## 🌐 Socials:
 [![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?logo=vercel&logoColor=white)](https://rida-taki.vercel.app/) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/rida_taki_10) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rida-taki-bb44a8350/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:takirida72@gmail.com)
 

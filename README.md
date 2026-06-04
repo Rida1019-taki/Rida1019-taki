@@ -1,13 +1,13 @@
 <div align="center">
 
-<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
+<table border="0" cellpadding="0" cellspacing="0">
 <tr>
-<td align="left" valign="top" width="64">
+<td align="left" valign="top">
 
 ![RT](https://img.shields.io/badge/RT-0C447C?style=for-the-badge&logoColor=white)
 
 </td>
-<td align="left" valign="top">
+<td align="left" valign="top" style="padding-left:12px">
 
 **Rida Taki**
 <br/>
@@ -38,11 +38,11 @@
 
 📫 **Contact** — [takirida72@gmail.com](mailto:takirida72@gmail.com)
 
----
-
 > ⚡ *Je transforme le café ☕ en code et les bugs en fonctionnalités 🚀*
 
 </div>
+
+---
 ## 🌐 Socials:
 [![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?logo=vercel&logoColor=white)](https://rida-taki.vercel.app/) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/rida_taki_10) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rida-taki-bb44a8350/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:takirida72@gmail.com)
 

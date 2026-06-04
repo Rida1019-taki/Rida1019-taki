@@ -39,7 +39,7 @@
 "Turning ideas into scalable software solutions."
 
 ---
-## 🌐 Socials:
+## Connect with Me
 [![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?logo=vercel&logoColor=white)](https://rida-taki.vercel.app/) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/rida_taki_10) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rida-taki-bb44a8350/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:takirida72@gmail.com)
 
 # 💻 Tech Stack:

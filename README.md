@@ -165,21 +165,16 @@ Building and improving software projects with a focus on backend development usi
 
 ## Certifications
 
-### AWS
-
-![AWS](https://img.shields.io/badge/AWS-In%20Progress-111827?style=for-the-badge&logo=amazonaws&logoColor=ff9900)
-
-### Oracle
-
-![Oracle](https://img.shields.io/badge/Oracle-In%20Progress-111827?style=for-the-badge&logo=oracle&logoColor=f80000)
-
-### NPTEL
-
-![NPTEL](https://img.shields.io/badge/NPTEL-In%20Progress-1f2937?style=for-the-badge&logo=bookstack&logoColor=c4b5fd)
-
 ### Cisco
 
-![Cisco](https://img.shields.io/badge/Cisco-In%20Progress-111827?style=for-the-badge&logo=cisco&logoColor=1ba0d7)
+[![Cisco Networking Academy](https://img.shields.io/badge/Cisco%20Networking%20Academy-Les%20bases%20du%20materiel%20informatique-111827?style=for-the-badge&logo=cisco&logoColor=1ba0d7)](https://www.linkedin.com/school/16202254/)
+[Certificate](https://www.linkedin.com/in/rida-taki-bb44a8350/overlay/Education/1213215827/treasury/?profileId=ACoAAFejVrgB5dhK7qm2n8BMeP38msakMOcQB9I)
+
+[![Cisco Networking Academy](https://img.shields.io/badge/Cisco%20Networking%20Academy-Python%20Essentials%201-1f2937?style=for-the-badge&logo=cisco&logoColor=1ba0d7)](https://www.linkedin.com/school/16202254/)
+[Certificate](https://www.linkedin.com/in/rida-taki-bb44a8350/overlay/Education/1213215842/treasury/?profileId=ACoAAFejVrgB5dhK7qm2n8BMeP38msakMOcQB9I)
+
+[![Cisco Networking Academy](https://img.shields.io/badge/Cisco%20Networking%20Academy-Introduction%20a%20la%20Cybersecurite-111827?style=for-the-badge&logo=cisco&logoColor=1ba0d7)](https://www.linkedin.com/school/16202254/)
+[Certificate](https://www.linkedin.com/in/rida-taki-bb44a8350/overlay/Education/1213226829/treasury/?profileId=ACoAAFejVrgB5dhK7qm2n8BMeP38msakMOcQB9I)
 
 ---
 

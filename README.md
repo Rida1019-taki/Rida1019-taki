@@ -1,10 +1,10 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&height=240&color=0:1e1b4b,40:312e81,75:4338ca,100:6366f1&text=Rida%20Taki&fontAlign=50&fontAlignY=40&fontSize=56&desc=Full-Stack%20Developer%20%7C%20Spring%20Boot%20and%20React.js&descAlign=50&descAlignY=62&fontColor=ffffff&animation=fadeIn)
+![header](https://capsule-render.vercel.app/api?type=waving&height=240&color=0:1e1b4b,40:312e81,75:4338ca,100:6366f1&text=Rida%20Taki&fontAlign=50&fontAlignY=40&fontSize=56&desc=Full-Stack%20and%20Mobile%20Developer%20%7C%20Spring%20Boot%20and%20React.js&descAlign=50&descAlignY=62&fontColor=ffffff&animation=fadeIn)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Montserrat&weight=600&size=24&pause=1200&color=A78BFA&center=true&vCenter=true&width=1000&lines=Full-Stack+Developer;Building+HealthCare%2B+Medical+Management+System;Learning+Spring+Boot+and+React.js;Turning+Ideas+Into+Scalable+Software+Solutions)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Montserrat&weight=600&size=24&pause=1200&color=A78BFA&center=true&vCenter=true&width=1000&lines=Full-Stack+and+Mobile+Developer;Building+HealthCare%2B+Medical+Management+System;Learning+Spring+Boot+and+React.js;Turning+Ideas+Into+Scalable+Software+Solutions)](https://git.io/typing-svg)
 
-[![Role](https://img.shields.io/badge/Role-Full--Stack%20Developer-111827?style=flat-square&logo=stackshare&logoColor=c4b5fd)](#)
+[![Role](https://img.shields.io/badge/Role-Full--Stack%20and%20Mobile%20Developer-111827?style=flat-square&logo=stackshare&logoColor=c4b5fd)](#)
 [![Backend Learning](https://img.shields.io/badge/Backend-Spring%20Boot-1f2937?style=flat-square&logo=spring&logoColor=a78bfa)](#)
 [![Frontend Learning](https://img.shields.io/badge/Frontend-React.js-111827?style=flat-square&logo=react&logoColor=818cf8)](#)
 [![Current Project](https://img.shields.io/badge/Current%20Project-HealthCare%2B-1f2937?style=flat-square&logo=mediamarkt&logoColor=93c5fd)](#)
@@ -24,11 +24,11 @@
 
 ## About
 
-Full-Stack Developer focused on building practical software products with Spring Boot and React.js. I enjoy designing clean backend APIs, building responsive frontend interfaces, and improving code quality through consistent engineering practices.
+Full-Stack and Mobile Developer focused on building practical software products with Spring Boot, React.js, Kotlin, and Flutter. I enjoy designing clean backend APIs, building responsive frontend interfaces, and improving code quality through consistent engineering practices.
 
 I am currently developing **HealthCare+**, a medical management system, while continuing to strengthen my backend and frontend skills in real project scenarios.
 
-**Open To:** Full Stack Developer opportunities, Backend Developer roles, and software engineering internships.
+**Open To:** Full-Stack and Mobile Developer opportunities, Backend Developer roles, and software engineering internships.
 
 ---
 

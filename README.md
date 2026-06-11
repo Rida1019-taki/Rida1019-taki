@@ -1,6 +1,6 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&height=240&color=0:1e1b4b,40:312e81,75:4338ca,100:6366f1&text=Rida%20Taki&fontAlign=50&fontAlignY=40&fontSize=56&desc=Full-Stack%20Developer%20%7C%20Spring%20Boot%20%26%20React.js&descAlign=50&descAlignY=62&fontColor=ffffff&animation=fadeIn)
+![header](https://capsule-render.vercel.app/api?type=waving&height=240&color=0:1e1b4b,40:312e81,75:4338ca,100:6366f1&text=Rida%20Taki&fontAlign=50&fontAlignY=40&fontSize=56&desc=Full-Stack%20Developer%20%7C%20Spring%20Boot%20and%20React.js&descAlign=50&descAlignY=62&fontColor=ffffff&animation=fadeIn)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Montserrat&weight=600&size=24&pause=1200&color=A78BFA&center=true&vCenter=true&width=1000&lines=Full-Stack+Developer;Building+HealthCare%2B+Medical+Management+System;Learning+Spring+Boot+and+React.js;Turning+Ideas+Into+Scalable+Software+Solutions)](https://git.io/typing-svg)
 
@@ -228,7 +228,7 @@ Building and improving software projects with a focus on backend development usi
 
 <div align="center">
 
-![snake gif](https://github.com/Rida1019-taki/Rida1019-taki/blob/output/github-contribution-grid-snake-dark.svg)
+![snake gif](https://raw.githubusercontent.com/Rida1019-taki/Rida1019-taki/output/github-contribution-grid-snake-dark.svg)
 
 </div>
 

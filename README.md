@@ -60,18 +60,6 @@ I am currently developing **HealthCare+**, a medical management system, while co
 
 ---
 
-## AI / ML Expertise
-
-| Domain | Proficiency | Details |
-|---|---|---|
-| AI/ML Foundations | Learning | Building foundational understanding of AI/ML concepts and practical use cases |
-| Data Preparation | Learning | Exploring basic data preprocessing and model-ready dataset structuring |
-| Applied AI in Products | Learning | Studying how AI features can be integrated into software products |
-| NLP Basics | Learning | Exploring introductory natural language processing workflows |
-| Model Lifecycle Basics | Learning | Learning model evaluation and deployment fundamentals |
-
----
-
 ## Featured Projects
 
 <details>

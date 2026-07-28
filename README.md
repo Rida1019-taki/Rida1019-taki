@@ -44,7 +44,7 @@ I specialize in building robust backend systems with **Spring Boot** and develop
 
 - 🔭 **Current Status:** Open to Full-Stack & Backend Internship opportunities.
 - 🎓 **Education:** Technicien Spécialisé en Développement Digital (OFPPT - ISTA Oued Zem).
-- 💬 **Ask me about:** Java, Spring Security, Flutter, SQLite, & RESTful Microservices.
+- 💬 **Ask me about:** Java, Spring Security, Flutter, SQLite.
 - ⚡ **Fun fact:** I love designing UI mockups in Figma before translating them into fully functional, production-ready code.
 
 ---

@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 import os
+import base64
+import urllib.request
 
 # Define color schemes
 THEMES = {
@@ -47,6 +49,9 @@ SVG_TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 380" 
       <stop offset="0%" stop-color="{{GLOW_COLOR}}" />
       <stop offset="100%" stop-color="transparent" />
     </radialGradient>
+    <clipPath id="avatar-clip">
+      <circle cx="60" cy="105" r="24" />
+    </clipPath>
   </defs>
 
   <style>
@@ -204,9 +209,10 @@ SVG_TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 380" 
     <g id="profile-card">
       <rect x="20" y="60" width="290" height="145" rx="12" fill="var(--bg-card)" stroke="var(--border)" stroke-width="1"/>
       
-      <!-- Avatar with initials -->
-      <circle cx="60" cy="105" r="24" fill="url(#avatar-grad)" style="animation: pulse-glow 3s infinite;" />
-      <text x="60" y="111" text-anchor="middle" font-family="var(--font-sans)" font-size="15" font-weight="bold" fill="#FFFFFF">RT</text>
+      <!-- Avatar Image Frame -->
+      <g style="animation: pulse-glow 3s infinite;">
+        {{AVATAR_ELEMENT}}
+      </g>
       
       <!-- User Info -->
       <text x="96" y="98" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="var(--text)">Rida Taki</text>
@@ -274,13 +280,13 @@ SVG_TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 380" 
       </g>
 
       <!-- JSON OUTPUT (Command 1 output) -->
-      <text x="10" y="20" font-family="var(--font-mono)" font-size="11" fill="var(--muted)" class="term-l2">{{</text>
+      <text x="10" y="20" font-family="var(--font-mono)" font-size="11" fill="var(--muted)" class="term-l2">{</text>
       <text x="10" y="38" font-family="var(--font-mono)" font-size="11" fill="var(--muted)" class="term-l3">  "name": <tspan fill="{{ACCENT_BLUE}}">"Rida Taki"</tspan>,</text>
       <text x="10" y="56" font-family="var(--font-mono)" font-size="11" fill="var(--muted)" class="term-l4">  "role": <tspan fill="{{ACCENT_BLUE}}">"Full-Stack &amp; Mobile Developer"</tspan>,</text>
       <text x="10" y="74" font-family="var(--font-mono)" font-size="11" fill="var(--muted)" class="term-l5">  "education": <tspan fill="{{ACCENT_BLUE}}">"OFPPT - ISTA Oued Zem"</tspan>,</text>
       <text x="10" y="92" font-family="var(--font-mono)" font-size="11" fill="var(--muted)" class="term-l6">  "skills": [<tspan fill="{{PRIMARY}}">"Spring Boot"</tspan>, <tspan fill="{{PRIMARY}}">"React"</tspan>, <tspan fill="{{PRIMARY}}">"Flutter"</tspan>],</text>
       <text x="10" y="110" font-family="var(--font-mono)" font-size="11" fill="var(--muted)" class="term-l7">  "status": <tspan fill="{{ACCENT_GREEN}}">"Open to Internship Opportunities"</tspan></text>
-      <text x="10" y="128" font-family="var(--font-mono)" font-size="11" fill="var(--muted)" class="term-l8">}}</text>
+      <text x="10" y="128" font-family="var(--font-mono)" font-size="11" fill="var(--muted)" class="term-l8">}</text>
 
       <!-- COMMAND 2: npm run deploy (appears at y=155) -->
       <g class="term-p2">
@@ -335,7 +341,28 @@ FOOTER_TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 55
 </svg>
 """
 
+
+def fetch_avatar_as_base64(username):
+    print(f"Fetching GitHub avatar for {username}...")
+    url = f"https://github.com/{username}.png"
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=10) as response:
+            image_bytes = response.read()
+            b64_data = base64.b64encode(image_bytes).decode("utf-8")
+            mime_type = response.headers.get_content_type() or "image/png"
+            print("Successfully loaded avatar and converted to Base64.")
+            return f'<image href="data:{mime_type};base64,{b64_data}" x="36" y="81" width="48" height="48" clip-path="url(#avatar-clip)"/>'
+    except Exception as e:
+        print(f"Failed to fetch avatar ({e}). Using default initials vector fallback...")
+        return '<circle cx="60" cy="105" r="24" fill="url(#avatar-grad)"/><text x="60" y="111" text-anchor="middle" font-family="var(--font-sans)" font-size="15" font-weight="bold" fill="#FFFFFF">RT</text>'
+
+
 def generate_svgs():
+    # Fetch avatar representation
+    avatar_element = fetch_avatar_as_base64("Rida1019-taki")
+
     print("Generating animated dashboard and footer SVGs...")
     for theme_name, theme_data in THEMES.items():
         # Generate Banner
@@ -343,6 +370,10 @@ def generate_svgs():
         banner_content = SVG_TEMPLATE
         for placeholder, value in theme_data.items():
             banner_content = banner_content.replace(placeholder, value)
+        
+        # Inject avatar
+        banner_content = banner_content.replace("{{AVATAR_ELEMENT}}", avatar_element)
+
         with open(banner_filename, "w", encoding="utf-8") as f:
             f.write(banner_content)
         print(f"Successfully generated: {banner_filename}")

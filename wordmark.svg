@@ -4,7 +4,7 @@
 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="100%" height="100%" preserveAspectRatio="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="100%" height="100%">
     <defs>
         <style>
             .bg { fill: #111722; }
@@ -14,37 +14,29 @@
             .term-dot-green { fill: #10b981; }
             .term-title { font-family: 'Fira Code', 'Courier New', monospace; font-size: 16px; fill: #64748b; font-weight: 600; }
 
+            /* Glowing Big Multiline Text */
             .ascii-text-back {
             font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
-            font-size: 110px;
+            font-size: 170px;
             font-weight: 900;
-            letter-spacing: 8px;
+            letter-spacing: 12px;
             fill: none;
             stroke: #3b82f6;
-            stroke-width: 3;
-            opacity: 0.4;
-            animation: glitchBack 4s indefinite alternate;
+            stroke-width: 4;
+            opacity: 0.35;
             }
 
             .ascii-text-main {
             font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
-            font-size: 110px;
+            font-size: 170px;
             font-weight: 900;
-            letter-spacing: 8px;
+            letter-spacing: 12px;
             fill: url(#text-gradient);
-            filter: drop-shadow(0 0 18px rgba(59, 130, 246, 0.7));
+            filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.75));
             }
 
             .prompt { font-family: 'Fira Code', monospace; font-size: 22px; fill: #38bdf8; }
-            .cursor {
-            fill: #38bdf8;
-            animation: blink 1s infinite;
-            }
-
-            @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-            }
+            .cursor { fill: #38bdf8; }
         </style>
 
         <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -58,60 +50,63 @@
         </pattern>
 
         <clipPath id="wave-clip">
-            <rect x="-200" y="200" width="250" height="400">
-                <animate attributeName="x" values="-200; 1000" dur="3s" repeatCount="indefinite" />
+            <rect x="-300" y="100" width="350" height="600">
+                <animate attributeName="x" values="-300; 1100" dur="3.5s" repeatCount="indefinite" />
             </rect>
         </clipPath>
     </defs>
 
-    <!-- Full Background Frame -->
-    <rect class="bg" width="1000" height="800" rx="12" />
+    <!-- Background -->
+    <rect class="bg" width="1000" height="800" rx="16" />
 
     <!-- Terminal Header -->
-    <path class="term-header" d="M 0,12 A 12,12 0 0,1 12,0 L 988,0 A 12,12 0 0,1 1000,12 L 1000,50 L 0,50 Z" />
+    <path class="term-header" d="M 0,16 A 16,16 0 0,1 16,0 L 984,0 A 16,16 0 0,1 1000,16 L 1000,50 L 0,50 Z" />
     <circle class="term-dot-red" cx="28" cy="25" r="7" />
     <circle class="term-dot-yellow" cx="50" cy="25" r="7" />
     <circle class="term-dot-green" cx="72" cy="25" r="7" />
     <text class="term-title" x="500" y="31" text-anchor="middle">rida@github: ~$ ./show_banner.sh</text>
 
     <!-- Top Prompt -->
-    <text class="prompt" x="50" y="120">
+    <text class="prompt" x="50" y="110">
         <tspan fill="#4ade80">rida@devbox</tspan>:<tspan fill="#818cf8">~</tspan>$ cat banner.txt
     </text>
 
-    <!-- Centered Main Title -->
+    <!-- Dynamic Glitch / 3D Text (Stacked Vertical) -->
     <g>
-        <text class="ascii-text-back" x="500" y="440" text-anchor="middle">
-            RIDA TAKI
-            <animateTransform attributeName="transform" type="translate"
-                              values="0 0; -4 -3; 4 3; -3 2; 0 0"
-                              keyTimes="0; 0.25; 0.5; 0.75; 1"
-                              dur="4s" repeatCount="indefinite" />
-        </text>
+        <!-- Wireframe Layer -->
+        <text class="ascii-text-back" x="500" y="360" text-anchor="middle">RIDA</text>
+        <text class="ascii-text-back" x="500" y="550" text-anchor="middle">TAKI</text>
+        <animateTransform attributeName="transform" type="translate"
+                          values="0 0; -4 -3; 4 3; -3 2; 0 0"
+                          keyTimes="0; 0.25; 0.5; 0.75; 1"
+                          dur="4s" repeatCount="indefinite" />
 
-        <text class="ascii-text-main" x="500" y="440" text-anchor="middle">
-            RIDA TAKI
-            <animateTransform attributeName="transform" type="translate"
-                              values="0 0; 3 2; -2 -3; 2 3; 0 0"
-                              keyTimes="0; 0.2; 0.5; 0.8; 1"
-                              dur="5s" repeatCount="indefinite" />
-        </text>
+        <!-- Main Solid Gradient Layer -->
+        <text class="ascii-text-main" x="500" y="360" text-anchor="middle">RIDA</text>
+        <text class="ascii-text-main" x="500" y="550" text-anchor="middle">TAKI</text>
+        <animateTransform attributeName="transform" type="translate"
+                          values="0 0; 3 2; -2 -3; 2 3; 0 0"
+                          keyTimes="0; 0.2; 0.5; 0.8; 1"
+                          dur="5s" repeatCount="indefinite" />
     </g>
 
-    <!-- Dynamic Wave Highlight -->
-    <text class="ascii-text-main" x="500" y="440" text-anchor="middle" fill="#93c5fd" opacity="0.8" clip-path="url(#wave-clip)">
-        RIDA TAKI
-    </text>
+    <!-- Animated Wave Overlay Layer -->
+    <g clip-path="url(#wave-clip)">
+        <text class="ascii-text-main" x="500" y="360" text-anchor="middle" fill="#93c5fd" opacity="0.85">RIDA</text>
+        <text class="ascii-text-main" x="500" y="550" text-anchor="middle" fill="#93c5fd" opacity="0.85">TAKI</text>
+    </g>
 
-    <!-- CRT Effect overlay -->
-    <rect width="1000" height="800" fill="url(#scanlines)" pointer-events="none" opacity="0.8" />
+    <!-- CRT Scanlines -->
+    <rect width="1000" height="800" fill="url(#scanlines)" pointer-events="none" opacity="0.7" />
 
     <!-- Bottom Prompt & Cursor -->
     <g>
-        <text class="prompt" x="50" y="720">
+        <text class="prompt" x="50" y="735">
             <tspan fill="#4ade80">rida@devbox</tspan>:<tspan fill="#818cf8">~</tspan>$
         </text>
-        <rect class="cursor" x="235" y="700" width="14" height="24" />
+        <rect class="cursor" x="235" y="717" width="14" height="24">
+            <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+        </rect>
     </g>
 </svg>
 

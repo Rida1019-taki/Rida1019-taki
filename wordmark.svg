@@ -51,9 +51,16 @@
         <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
             <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1" opacity="0.15" />
         </pattern>
+
+        <!-- Wave Animated Clip Path -->
+        <clipPath id="wave-clip">
+            <rect x="-200" y="250" width="250" height="300">
+                <animate attributeName="x" values="-200; 1000" dur="3s" repeatCount="indefinite" />
+            </rect>
+        </clipPath>
     </defs>
 
-    <!-- Terminal Window Background (Height extended to 800) -->
+    <!-- Terminal Window Background -->
     <rect class="bg" width="1000" height="800" rx="16" />
 
     <!-- Terminal Header -->
@@ -68,14 +75,14 @@
         <tspan fill="#4ade80">rida@devbox</tspan>:<tspan fill="#818cf8">~</tspan>$ cat banner.txt
     </text>
 
-    <!-- 3D / Glitch Motion Effect (Centered Vertically at y=420) -->
+    <!-- 3D / Glitch Motion Effect (Background Wireframe) -->
     <g>
         <text class="ascii-text-back" x="500" y="420" text-anchor="middle">
             RIDA TAKI
-            <animate attributeName="transform" type="translate"
-                     values="0 0; -4 -3; 4 3; -3 2; 0 0"
-                     keyTimes="0; 0.25; 0.5; 0.75; 1"
-                     dur="4s" repeatCount="indefinite" />
+            <animateTransform attributeName="transform" type="translate"
+                              values="0 0; -4 -3; 4 3; -3 2; 0 0"
+                              keyTimes="0; 0.25; 0.5; 0.75; 1"
+                              dur="4s" repeatCount="indefinite" />
             <animate attributeName="opacity"
                      values="0.3; 0.6; 0.2; 0.5; 0.3"
                      dur="0.2s" repeatCount="indefinite" />
@@ -84,10 +91,10 @@
         <!-- Main Dynamic Text Banner -->
         <text class="ascii-text-main" x="500" y="420" text-anchor="middle">
             RIDA TAKI
-            <animate attributeName="transform" type="translate"
-                     values="0 0; 3 2; -2 -3; 2 3; 0 0"
-                     keyTimes="0; 0.2; 0.5; 0.8; 1"
-                     dur="5s" repeatCount="indefinite" />
+            <animateTransform attributeName="transform" type="translate"
+                              values="0 0; 3 2; -2 -3; 2 3; 0 0"
+                              keyTimes="0; 0.2; 0.5; 0.8; 1"
+                              dur="5s" repeatCount="indefinite" />
         </text>
     </g>
 
@@ -96,22 +103,18 @@
         RIDA TAKI
     </text>
 
-    <!-- Wave Animated Clip Path -->
-    <clipPath id="wave-clip">
-        <rect x="-200" y="250" width="250" height="300">
-            <animate attributeName="x" values="-200; 1000" dur="3s" repeatCount="indefinite" />
-        </rect>
-    </clipPath>
-
     <!-- Scanline Overlay -->
     <rect width="1000" height="800" fill="url(#scanlines)" pointer-events="none" opacity="0.8" />
 
-    <!-- Shell Prompt Bottom with Blinking Cursor -->
-    <text class="prompt" x="50" y="730">
-        <tspan fill="#4ade80">rida@devbox</tspan>:<tspan fill="#818cf8">~</tspan>$
+    <!-- Shell Prompt Bottom -->
+    <g>
+        <text class="prompt" x="50" y="730">
+            <tspan fill="#4ade80">rida@devbox</tspan>:<tspan fill="#818cf8">~</tspan>$
+        </text>
+        <!-- Cursor separation to fix rect inside text error -->
         <rect class="cursor" x="230" y="712" width="12" height="22">
             <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
         </rect>
-    </text>
+    </g>
 </svg>
 

@@ -8,7 +8,7 @@
 <h3><code>rida@github ~ $ neofetch --user rida</code></h3>
 <table>
   <tr>
-    <td valign="top"><img src="./rida-ascii.svg" width="370" /></td>
+    <td valign="top"><img src="source-photo.jpg" width="370" /></td>
     <td valign="top"><img src="./info-card.svg" width="490" /></td>
   </tr>
 </table>

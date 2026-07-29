@@ -4,7 +4,7 @@
 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="100%" height="100%">
     <defs>
         <!-- Background & Terminal Styling -->
         <style>
@@ -13,30 +13,30 @@
             .term-dot-red { fill: #ef4444; }
             .term-dot-yellow { fill: #f59e0b; }
             .term-dot-green { fill: #10b981; }
-            .term-title { font-family: 'Fira Code', 'Courier New', monospace; font-size: 14px; fill: #64748b; font-weight: 600; }
+            .term-title { font-family: 'Fira Code', 'Courier New', monospace; font-size: 16px; fill: #64748b; font-weight: 600; }
 
             /* Glowing Text Styles */
             .ascii-text-back {
             font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
-            font-size: 82px;
+            font-size: 105px;
             font-weight: 900;
-            letter-spacing: 6px;
+            letter-spacing: 8px;
             fill: none;
             stroke: #3b82f6;
-            stroke-width: 2;
+            stroke-width: 3;
             opacity: 0.4;
             }
 
             .ascii-text-main {
             font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
-            font-size: 82px;
+            font-size: 105px;
             font-weight: 900;
-            letter-spacing: 6px;
+            letter-spacing: 8px;
             fill: url(#text-gradient);
-            filter: drop-shadow(0 0 12px rgba(59, 130, 246, 0.6));
+            filter: drop-shadow(0 0 16px rgba(59, 130, 246, 0.7));
             }
 
-            .prompt { font-family: 'Fira Code', monospace; font-size: 16px; fill: #38bdf8; }
+            .prompt { font-family: 'Fira Code', monospace; font-size: 20px; fill: #38bdf8; }
             .cursor { fill: #38bdf8; }
         </style>
 
@@ -53,27 +53,27 @@
         </pattern>
     </defs>
 
-    <!-- Terminal Window Background -->
-    <rect class="bg" width="1000" height="420" rx="12" />
+    <!-- Terminal Window Background (Height extended to 800) -->
+    <rect class="bg" width="1000" height="800" rx="16" />
 
     <!-- Terminal Header -->
-    <path class="term-header" d="M 0,12 A 12,12 0 0,1 12,0 L 988,0 A 12,12 0 0,1 1000,12 L 1000,40 L 0,40 Z" />
-    <circle class="term-dot-red" cx="24" cy="20" r="6" />
-    <circle class="term-dot-yellow" cx="44" cy="20" r="6" />
-    <circle class="term-dot-green" cx="64" cy="20" r="6" />
-    <text class="term-title" x="500" y="25" text-anchor="middle">rida@github: ~$ ./show_banner.sh</text>
+    <path class="term-header" d="M 0,16 A 16,16 0 0,1 16,0 L 984,0 A 16,16 0 0,1 1000,16 L 1000,50 L 0,50 Z" />
+    <circle class="term-dot-red" cx="28" cy="25" r="7" />
+    <circle class="term-dot-yellow" cx="50" cy="25" r="7" />
+    <circle class="term-dot-green" cx="72" cy="25" r="7" />
+    <text class="term-title" x="500" y="31" text-anchor="middle">rida@github: ~$ ./show_banner.sh</text>
 
     <!-- Shell Prompt Top -->
-    <text class="prompt" x="40" y="80">
+    <text class="prompt" x="50" y="110">
         <tspan fill="#4ade80">rida@devbox</tspan>:<tspan fill="#818cf8">~</tspan>$ cat banner.txt
     </text>
 
-    <!-- 3D / Glitch Motion Effect (Background Wireframe) -->
+    <!-- 3D / Glitch Motion Effect (Centered Vertically at y=420) -->
     <g>
-        <text class="ascii-text-back" x="500" y="215" text-anchor="middle">
+        <text class="ascii-text-back" x="500" y="420" text-anchor="middle">
             RIDA TAKI
             <animate attributeName="transform" type="translate"
-                     values="0 0; -3 -2; 3 2; -2 1; 0 0"
+                     values="0 0; -4 -3; 4 3; -3 2; 0 0"
                      keyTimes="0; 0.25; 0.5; 0.75; 1"
                      dur="4s" repeatCount="indefinite" />
             <animate attributeName="opacity"
@@ -82,35 +82,36 @@
         </text>
 
         <!-- Main Dynamic Text Banner -->
-        <text class="ascii-text-main" x="500" y="215" text-anchor="middle">
+        <text class="ascii-text-main" x="500" y="420" text-anchor="middle">
             RIDA TAKI
             <animate attributeName="transform" type="translate"
-                     values="0 0; 2 1; -1 -2; 1 2; 0 0"
+                     values="0 0; 3 2; -2 -3; 2 3; 0 0"
                      keyTimes="0; 0.2; 0.5; 0.8; 1"
                      dur="5s" repeatCount="indefinite" />
         </text>
     </g>
 
     <!-- Wave Wipe Highlight Layer -->
-    <text class="ascii-text-main" x="500" y="215" text-anchor="middle" fill="#93c5fd" opacity="0.8" clip-path="url(#wave-clip)">
+    <text class="ascii-text-main" x="500" y="420" text-anchor="middle" fill="#93c5fd" opacity="0.8" clip-path="url(#wave-clip)">
         RIDA TAKI
     </text>
 
     <!-- Wave Animated Clip Path -->
     <clipPath id="wave-clip">
-        <rect x="-200" y="100" width="200" height="180">
+        <rect x="-200" y="250" width="250" height="300">
             <animate attributeName="x" values="-200; 1000" dur="3s" repeatCount="indefinite" />
         </rect>
     </clipPath>
 
     <!-- Scanline Overlay -->
-    <rect width="1000" height="420" fill="url(#scanlines)" pointer-events="none" />
+    <rect width="1000" height="800" fill="url(#scanlines)" pointer-events="none" opacity="0.8" />
 
     <!-- Shell Prompt Bottom with Blinking Cursor -->
-    <text class="prompt" x="40" y="340">
+    <text class="prompt" x="50" y="730">
         <tspan fill="#4ade80">rida@devbox</tspan>:<tspan fill="#818cf8">~</tspan>$
-        <rect class="cursor" x="185" y="326" width="10" height="18">
+        <rect class="cursor" x="230" y="712" width="12" height="22">
             <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
         </rect>
     </text>
 </svg>
+

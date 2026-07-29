@@ -1,17 +1,26 @@
+# scripts/make_ascii_svg.py
 import cv2
 import numpy as np
+import os
 
 RAMP = " .`:-=+*cs#%@"  # bright -> dark
 
-def convert_to_ascii_svg(image_path="source-prepped.png", output_svg="rida-ascii.svg"):
-    img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
-    if img is None:
-        # Fallback dummy grid if image is not prepared yet
-        img = np.full((53, 100), 200, dtype=np.uint8)
+def convert_to_ascii_svg():
+    # Check prepped or original photo
+    img_path = "source-prepped.png" if os.path.exists("source-prepped.png") else "source-photo.jpg"
+    img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
 
-    target_cols = 90
+    if img is None:
+        print("Error: No image found!")
+        return
+
+    # Contrast Boost
+    clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8,8))
+    img = clahe.apply(img)
+
+    target_cols = 75
     aspect_ratio = img.shape[0] / img.shape[1]
-    target_rows = int(target_cols * aspect_ratio * 0.5)
+    target_rows = int(target_cols * aspect_ratio * 0.45)
 
     resized = cv2.resize(img, (target_cols, target_rows))
 
@@ -25,16 +34,14 @@ def convert_to_ascii_svg(image_path="source-prepped.png", output_svg="rida-ascii
 
     char_width = 7
     char_height = 12
-    width = target_cols * char_width + 20
-    height = target_rows * char_height + 20
+    width = 370
+    height = target_rows * char_height + 30
 
     svg_lines = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">',
         '  <style>',
         '    .bg { fill: #0d1117; }',
-        '    .ascii { font-family: monospace; font-size: 11px; fill: #818cf8; white-space: pre; }',
-        '    @keyframes wipe { 0% { width: 0%; } 100% { width: 100%; } }',
-        '    .row { overflow: hidden; animation: wipe 0.05s forwards; }',
+        '    .ascii { font-family: monospace; font-size: 10px; fill: #818cf8; white-space: pre; }',
         '  </style>',
         f'  <rect class="bg" width="{width}" height="{height}" rx="8"/>',
         '  <g class="ascii">'
@@ -42,18 +49,15 @@ def convert_to_ascii_svg(image_path="source-prepped.png", output_svg="rida-ascii
 
     for idx, line in enumerate(char_lines):
         y = 20 + (idx * char_height)
-        delay = idx * 0.04
         escaped_line = line.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace(" ", "&#160;")
-        svg_lines.append(
-            f'    <text x="10" y="{y}" style="animation: wipe 0.2s ease-out {delay:.2f}s both;">{escaped_line}</text>'
-        )
+        svg_lines.append(f'    <text x="10" y="{y}">{escaped_line}</text>')
 
     svg_lines.append('  </g>')
     svg_lines.append('</svg>')
 
-    with open(output_svg, "w", encoding="utf-8") as f:
+    with open("rida-ascii.svg", "w", encoding="utf-8") as f:
         f.write("\n".join(svg_lines))
-    print(f"ASCII SVG generated at {output_svg}")
+    print("rida-ascii.svg generated successfully!")
 
 if __name__ == "__main__":
     convert_to_ascii_svg()

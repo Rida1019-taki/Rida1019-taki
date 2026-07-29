@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 296" width="650" height="296">
+  <style>
+    .bg { fill: #0d1117; }
+    .ascii { font-family: monospace; font-size: 11px; fill: #818cf8; white-space: pre; }
+    @keyframes wipe { 0% { width: 0%; } 100% { width: 100%; } }
+    .row { overflow: hidden; animation: wipe 0.05s forwards; }
+  </style>
+  <rect class="bg" width="650" height="296" rx="8"/>
+  <g class="ascii">
+    <text x="10" y="20" style="animation: wipe 0.2s ease-out 0.00s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="32" style="animation: wipe 0.2s ease-out 0.04s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="44" style="animation: wipe 0.2s ease-out 0.08s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="56" style="animation: wipe 0.2s ease-out 0.12s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="68" style="animation: wipe 0.2s ease-out 0.16s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="80" style="animation: wipe 0.2s ease-out 0.20s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="92" style="animation: wipe 0.2s ease-out 0.24s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="104" style="animation: wipe 0.2s ease-out 0.28s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="116" style="animation: wipe 0.2s ease-out 0.32s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="128" style="animation: wipe 0.2s ease-out 0.36s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="140" style="animation: wipe 0.2s ease-out 0.40s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="152" style="animation: wipe 0.2s ease-out 0.44s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="164" style="animation: wipe 0.2s ease-out 0.48s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="176" style="animation: wipe 0.2s ease-out 0.52s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="188" style="animation: wipe 0.2s ease-out 0.56s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="200" style="animation: wipe 0.2s ease-out 0.60s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="212" style="animation: wipe 0.2s ease-out 0.64s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="224" style="animation: wipe 0.2s ease-out 0.68s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="236" style="animation: wipe 0.2s ease-out 0.72s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="248" style="animation: wipe 0.2s ease-out 0.76s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="260" style="animation: wipe 0.2s ease-out 0.80s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="272" style="animation: wipe 0.2s ease-out 0.84s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+    <text x="10" y="284" style="animation: wipe 0.2s ease-out 0.88s both;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</text>
+  </g>
+</svg>

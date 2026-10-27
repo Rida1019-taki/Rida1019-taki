@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-labelledby="p2-t">
+  <title id="p2-t">Full-Stack Spring Boot and React.js Projects</title>
+  <defs>
+    <linearGradient id="p2-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#190B12"/><stop offset="1" stop-color="#10070C"/></linearGradient>
+    <radialGradient id="p2-glow" cx="80%" cy="30%" r="60%"><stop offset="0" stop-color="#701A3D" stop-opacity=".7"/><stop offset="1" stop-color="#451126" stop-opacity="0"/></radialGradient>
+  </defs>
+  <style>
+    .p-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
+    .p-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .p-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  </style>
+  <rect width="1200" height="360" rx="20" fill="url(#p2-bg)"/>
+  <rect width="1200" height="360" rx="20" fill="url(#p2-glow)"/>
+  <rect x=".5" y=".5" width="1199" height="359" rx="19.5" fill="none" stroke="#701A3D" stroke-opacity=".4"/>
+
+  <g transform="translate(56, 0)">
+    <g transform="translate(0, 48)">
+      <text class="p-mono" font-size="11" letter-spacing="3" fill="#C77B9B">FULL-STACK ARCHITECTURE</text>
+      <text class="p-serif" y="44" font-size="38" font-weight="300" fill="#F8F0F3">Spring Boot <tspan font-style="italic" fill="#E5B5C7">&amp; React.js Platform</tspan></text>
+      <text class="p-sans" y="78" font-size="16" fill="#B6A3AC">Modular full-stack practice platform implementing robust backend routing, state hydration, and component UI.</text>
+    </g>
+
+    <g transform="translate(0, 168)">
+      <g>
+        <rect width="250" height="130" rx="12" fill="#10070C" stroke="#451126" stroke-width="1"/>
+        <text class="p-mono" x="20" y="32" font-size="11" letter-spacing="2" fill="#C77B9B">BACKEND PATTERNS</text>
+        <text class="p-serif" x="20" y="68" font-size="24" fill="#F8F0F3">Java &amp; Spring</text>
+        <text class="p-sans" x="20" y="98" font-size="12" fill="#B6A3AC">Controller-Service-Repo layers</text>
+      </g>
+      <g transform="translate(270, 0)">
+        <rect width="250" height="130" rx="12" fill="#10070C" stroke="#451126" stroke-width="1"/>
+        <text class="p-mono" x="20" y="32" font-size="11" letter-spacing="2" fill="#C77B9B">FRONTEND CLIENT</text>
+        <text class="p-serif" x="20" y="68" font-size="24" fill="#F8F0F3">React.js</text>
+        <text class="p-sans" x="20" y="98" font-size="12" fill="#B6A3AC">Modular components &amp; hooks</text>
+      </g>
+      <g transform="translate(540, 0)">
+        <rect width="250" height="130" rx="12" fill="#10070C" stroke="#451126" stroke-width="1"/>
+        <text class="p-mono" x="20" y="32" font-size="11" letter-spacing="2" fill="#C77B9B">DATA LAYER</text>
+        <text class="p-serif" x="20" y="68" font-size="24" fill="#F8F0F3">MySQL &amp; SQLite</text>
+        <text class="p-sans" x="20" y="98" font-size="12" fill="#B6A3AC">Transactional persistence &amp; JPA</text>
+      </g>
+      <g transform="translate(810, 0)">
+        <rect width="278" height="130" rx="12" fill="#10070C" stroke="#701A3D" stroke-width="1.2"/>
+        <text class="p-mono" x="20" y="32" font-size="11" letter-spacing="2" fill="#E5B5C7">API CONTRACT</text>
+        <text class="p-serif" x="20" y="68" font-size="24" fill="#F8F0F3">RESTful Specs</text>
+        <text class="p-sans" x="20" y="98" font-size="12" fill="#B6A3AC">Clean JSON contracts &amp; errors</text>
+      </g>
+    </g>
+  </g>
+</svg>

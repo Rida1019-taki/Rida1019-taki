@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-labelledby="tc-t">
+  <title id="tc-t">Tech Stack &amp; Toolkit</title>
+  <defs>
+    <linearGradient id="tc-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#190B12"/><stop offset="1" stop-color="#10070C"/></linearGradient>
+    <radialGradient id="tc-glow" cx="80%" cy="50%" r="65%"><stop offset="0" stop-color="#701A3D" stop-opacity=".65"/><stop offset="1" stop-color="#451126" stop-opacity="0"/></radialGradient>
+  </defs>
+  <style>
+    .tc-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
+    .tc-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .tc-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .pill { fill: #10070C; stroke: #451126; stroke-width: 1px; rx: 8px; }
+  </style>
+  <rect width="1200" height="480" rx="20" fill="url(#tc-bg)"/>
+  <rect width="1200" height="480" rx="20" fill="url(#tc-glow)"/>
+  <rect x=".5" y=".5" width="1199" height="479" rx="19.5" fill="none" stroke="#701A3D" stroke-opacity=".35"/>
+
+  <!-- Row 1: Languages -->
+  <g transform="translate(56, 44)">
+    <text class="tc-mono" font-size="11" letter-spacing="3" fill="#C77B9B">01 // LANGUAGES</text>
+    <text class="tc-serif" y="32" font-size="24" fill="#F8F0F3">Core Programming</text>
+    <g transform="translate(0, 48)">
+      <rect class="pill" width="80" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">Java</text>
+      <g transform="translate(92, 0)"><rect class="pill" width="115" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">JavaScript</text></g>
+      <g transform="translate(219, 0)"><rect class="pill" width="80" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">Kotlin</text></g>
+      <g transform="translate(311, 0)"><rect class="pill" width="75" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">Dart</text></g>
+      <g transform="translate(398, 0)"><rect class="pill" width="85" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">Python</text></g>
+      <g transform="translate(495, 0)"><rect class="pill" width="115" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">HTML5/CSS3</text></g>
+      <g transform="translate(622, 0)"><rect class="pill" width="70" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">SQL</text></g>
+    </g>
+  </g>
+
+  <!-- Row 2: Frontend & Mobile -->
+  <g transform="translate(56, 150)">
+    <text class="tc-mono" font-size="11" letter-spacing="3" fill="#C77B9B">02 // FRONTEND &amp; MOBILE</text>
+    <text class="tc-serif" y="32" font-size="24" fill="#F8F0F3">Client-Side Engineering</text>
+    <g transform="translate(0, 48)">
+      <rect class="pill" width="95" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#F8F0F3">React.js</text>
+      <g transform="translate(107, 0)"><rect class="pill" width="90" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#F8F0F3">Flutter</text></g>
+      <g transform="translate(209, 0)"><rect class="pill" width="140" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">Android SDK</text></g>
+      <g transform="translate(361, 0)"><rect class="pill" width="140" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">Tailwind CSS</text></g>
+      <g transform="translate(513, 0)"><rect class="pill" width="170" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">Responsive Layouts</text></g>
+    </g>
+  </g>
+
+  <!-- Row 3: Backend & Databases -->
+  <g transform="translate(56, 256)">
+    <text class="tc-mono" font-size="11" letter-spacing="3" fill="#C77B9B">03 // BACKEND &amp; DATA</text>
+    <text class="tc-serif" y="32" font-size="24" fill="#F8F0F3">Server &amp; Persistence</text>
+    <g transform="translate(0, 48)">
+      <rect class="pill" width="120" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#F8F0F3">Spring Boot</text>
+      <g transform="translate(132, 0)"><rect class="pill" width="110" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">REST APIs</text></g>
+      <g transform="translate(254, 0)"><rect class="pill" width="85" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">MySQL</text></g>
+      <g transform="translate(351, 0)"><rect class="pill" width="85" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">SQLite</text></g>
+      <g transform="translate(448, 0)"><rect class="pill" width="95" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">Firebase</text></g>
+      <g transform="translate(555, 0)"><rect class="pill" width="105" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">JWT Auth</text></g>
+    </g>
+  </g>
+
+  <!-- Row 4: DevOps & Tools -->
+  <g transform="translate(56, 362)">
+    <text class="tc-mono" font-size="11" letter-spacing="3" fill="#C77B9B">04 // DEVOPS &amp; TOOLING</text>
+    <text class="tc-serif" y="32" font-size="24" fill="#F8F0F3">Delivery &amp; Infrastructure</text>
+    <g transform="translate(0, 48)">
+      <rect class="pill" width="90" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#F8F0F3">Docker</text>
+      <g transform="translate(102, 0)"><rect class="pill" width="85" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">Maven</text></g>
+      <g transform="translate(199, 0)"><rect class="pill" width="65" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">Git</text></g>
+      <g transform="translate(276, 0)"><rect class="pill" width="85" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">GitHub</text></g>
+      <g transform="translate(373, 0)"><rect class="pill" width="75" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">Linux</text></g>
+      <g transform="translate(460, 0)"><rect class="pill" width="90" height="34"/><text class="tc-mono" x="16" y="22" font-size="12" fill="#E5B5C7">Postman</text></g>
+    </g>
+  </g>
+</svg>

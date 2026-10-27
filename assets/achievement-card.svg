@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-labelledby="ach-t ach-d">
+  <title id="ach-t">Milestones &amp; Practical Experience</title>
+  <desc id="ach-d">HealthCare+ Medical Platform. Spring Boot &amp; React.js Learning Projects. Kotlin &amp; Flutter Mobile Applications. Cisco Networking Academy Certified.</desc>
+  <defs>
+    <linearGradient id="ach-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#190B12"/><stop offset="1" stop-color="#10070C"/></linearGradient>
+    <radialGradient id="ach-glow" cx="85%" cy="0%" r="90%"><stop offset="0" stop-color="#701A3D" stop-opacity=".7"/><stop offset="1" stop-color="#451126" stop-opacity="0"/></radialGradient>
+  </defs>
+  <style>
+    .ach-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
+    .ach-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .ach-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  </style>
+  <rect width="1200" height="360" rx="20" fill="url(#ach-bg)"/>
+  <rect width="1200" height="360" rx="20" fill="url(#ach-glow)"/>
+  <rect x=".5" y=".5" width="1199" height="359" rx="19.5" fill="none" stroke="#701A3D" stroke-opacity=".3"/>
+
+  <!-- Column 1: HealthCare+ -->
+  <g transform="translate(48, 48)">
+    <rect width="340" height="264" rx="14" fill="#10070C" stroke="#451126" stroke-width="1.2"/>
+    <rect x="0" y="0" width="340" height="4" rx="2" fill="#C77B9B"/>
+    <text class="ach-mono" x="24" y="38" font-size="11" letter-spacing="2" fill="#C77B9B">CORE PROJECT</text>
+    <text class="ach-serif" x="24" y="72" font-size="25" font-weight="300" fill="#F8F0F3">HealthCare+</text>
+    <text class="ach-sans" x="24" y="104" font-size="13.5" fill="#B6A3AC">Medical Management Platform</text>
+    <line x1="24" y1="126" x2="316" y2="126" stroke="#451126"/>
+    <text class="ach-mono" x="24" y="152" font-size="12" fill="#E5B5C7">ROLE: Full-Stack Architect</text>
+    <text class="ach-mono" x="24" y="178" font-size="12" fill="#B6A3AC">DOMAIN: Clinical Workflows &amp; Scheduling</text>
+    <text class="ach-mono" x="24" y="204" font-size="12" fill="#B6A3AC">SECURITY: JWT &amp; Role-based auth</text>
+    <text class="ach-mono" x="24" y="230" font-size="12" fill="#C77B9B">STATUS: Active Development</text>
+  </g>
+
+  <!-- Column 2: Full-Stack Practice -->
+  <g transform="translate(430, 48)">
+    <rect width="340" height="264" rx="14" fill="#10070C" stroke="#451126" stroke-width="1.2"/>
+    <rect x="0" y="0" width="340" height="4" rx="2" fill="#701A3D"/>
+    <text class="ach-mono" x="24" y="38" font-size="11" letter-spacing="2" fill="#C77B9B">EXPERIENCE</text>
+    <text class="ach-serif" x="24" y="72" font-size="25" font-weight="300" fill="#F8F0F3">2024 – Present</text>
+    <text class="ach-sans" x="24" y="104" font-size="13.5" fill="#B6A3AC">Independent Full-Stack Work</text>
+    <line x1="24" y1="126" x2="316" y2="126" stroke="#451126"/>
+    <text class="ach-mono" x="24" y="152" font-size="12" fill="#E5B5C7">STACK: Spring Boot &amp; React.js</text>
+    <text class="ach-mono" x="24" y="178" font-size="12" fill="#B6A3AC">PRACTICE: Clean REST API contracts</text>
+    <text class="ach-mono" x="24" y="204" font-size="12" fill="#B6A3AC">DATABASE: MySQL &amp; SQLite schemas</text>
+    <text class="ach-mono" x="24" y="230" font-size="12" fill="#C77B9B">METHOD: Component UI &amp; Docker</text>
+  </g>
+
+  <!-- Column 3: Cisco Credentials -->
+  <g transform="translate(812, 48)">
+    <rect width="340" height="264" rx="14" fill="#10070C" stroke="#451126" stroke-width="1.2"/>
+    <rect x="0" y="0" width="340" height="4" rx="2" fill="#C77B9B"/>
+    <text class="ach-mono" x="24" y="38" font-size="11" letter-spacing="2" fill="#C77B9B">CISCO ACADEMY</text>
+    <text class="ach-serif" x="24" y="72" font-size="25" font-weight="300" fill="#F8F0F3">3 Credentials</text>
+    <text class="ach-sans" x="24" y="104" font-size="13.5" fill="#B6A3AC">Verified Networking Academy</text>
+    <line x1="24" y1="126" x2="316" y2="126" stroke="#451126"/>
+    <text class="ach-mono" x="24" y="152" font-size="12" fill="#E5B5C7">01: Python Essentials 1</text>
+    <text class="ach-mono" x="24" y="178" font-size="12" fill="#B6A3AC">02: Introduction à la Cybersécurité</text>
+    <text class="ach-mono" x="24" y="204" font-size="12" fill="#B6A3AC">03: Matériel Informatique</text>
+    <text class="ach-mono" x="24" y="230" font-size="12" fill="#C77B9B">DOCUMENTS: Verified Local PDFs</text>
+  </g>
+</svg>

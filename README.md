@@ -1,268 +1,68 @@
-<div align="center">
+<a href="https://rida-taki.vercel.app/">
+  <img src="assets/rida-hero-portrait.svg" width="100%" alt="Rida Taki — Full-Stack &amp; Mobile Developer. Building scalable backends. Crafting responsive interfaces.">
+</a>
 
-<!-- Live Contribution Heatmap (Auto-refreshed daily with real data) -->
-<h3><code>rida@github ~ $ ./contributions.sh --live</code></h3>
-
-<img src="./contrib-heatmap.svg" width="860" alt="Rida Taki — Live Contributions Heatmap" />
-
-<br>
-<br>
-
-<!-- Terminal Hero: Monochrome ASCII portrait & Neofetch Info Card -->
-<h3><code>rida@github ~ $ neofetch --user rida</code></h3>
-
-<table>
-<tr>
-<td valign="top"><img src="./avi-ascii.svg" width="370" alt="Rida Taki — ASCII portrait" /></td>
-<td valign="top"><img src="./info-card.svg" width="490" alt="Rida Taki — Neofetch Info Card" /></td>
-</tr>
-</table>
-
-<br>
-<br>
-
-<!-- 3D Terminal Wordmark Banner -->
-<h3><code>rida@github ~ $ ./banner.sh</code></h3>
-
-<img src="./wordmark.svg" width="860" alt="RIDA TAKI — 3D Terminal Wordmark" />
-
-<br>
-<br>
-
-![header](https://capsule-render.vercel.app/api?type=waving&height=240&color=0:1e1b4b,40:312e81,75:4338ca,100:6366f1&text=Rida%20Taki&fontAlign=50&fontAlignY=40&fontSize=56&desc=Full-Stack%20and%20Mobile%20Developer%20%7C%20Spring%20Boot%20and%20React.js&descAlign=50&descAlignY=62&fontColor=ffffff&animation=fadeIn)
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Montserrat&weight=600&size=24&pause=1200&color=A78BFA&center=true&vCenter=true&width=1000&lines=Full-Stack+and+Mobile+Developer;Building+HealthCare%2B+Medical+Management+System;Learning+Spring+Boot+and+React.js;Turning+Ideas+Into+Scalable+Software+Solutions)](https://git.io/typing-svg)
-
-[![Role](https://img.shields.io/badge/Role-Full--Stack%20and%20Mobile%20Developer-111827?style=flat-square&logo=stackshare&logoColor=c4b5fd)](#)
-[![Backend Learning](https://img.shields.io/badge/Backend-Spring%20Boot-1f2937?style=flat-square&logo=spring&logoColor=a78bfa)](#)
-[![Frontend Learning](https://img.shields.io/badge/Frontend-React.js-111827?style=flat-square&logo=react&logoColor=818cf8)](#)
-[![Current Project](https://img.shields.io/badge/Current%20Project-HealthCare%2B-1f2937?style=flat-square&logo=mediamarkt&logoColor=93c5fd)](#)
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-0f172a?style=for-the-badge&logo=vercel&logoColor=ffffff)](https://rida-taki.vercel.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0f172a?style=for-the-badge&logo=linkedin&logoColor=93c5fd)](https://www.linkedin.com/in/rida-taki-bb44a8350/)
-[![Email](https://img.shields.io/badge/Email-0f172a?style=for-the-badge&logo=gmail&logoColor=c4b5fd)](mailto:takirida72@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-0f172a?style=for-the-badge&logo=github&logoColor=ffffff)](https://github.com/Rida1019-taki)
-
-![Profile Views](https://komarev.com/ghpvc/?username=Rida1019-taki&style=flat-square&color=6366f1)
-[![Followers](https://img.shields.io/github/followers/Rida1019-taki?style=flat-square&color=4f46e5&labelColor=111827&logo=github)](https://github.com/Rida1019-taki?tab=followers)
-[![Stars](https://img.shields.io/github/stars/Rida1019-taki?style=flat-square&color=6366f1&labelColor=111827&logo=github)](https://github.com/Rida1019-taki?tab=repositories)
-
-</div>
-
----
-
-## About
-
-Full-Stack and Mobile Developer focused on building practical software products with Spring Boot, React.js, Kotlin, and Flutter. I enjoy designing clean backend APIs, building responsive frontend interfaces, and improving code quality through consistent engineering practices.
-
-I am currently developing **HealthCare+**, a medical management system, while continuing to strengthen my backend and frontend skills in real project scenarios.
-
-**Open To:** Full-Stack and Mobile Developer opportunities, Backend Developer roles, and software engineering internships.
-
----
-
-## Tech Stack
-
-### Languages
-
-<p>
-  <img src="https://skillicons.dev/icons?i=java,js,dart,kotlin,html,css" />
+<p align="center">
+  <a href="https://rida-taki.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-rida--taki.vercel.app-701A3D?style=for-the-badge&amp;labelColor=190B12&amp;logoColor=F8F0F3&amp;logo=vercel" alt="Portfolio website"></a>
+  <a href="https://www.linkedin.com/in/rida-taki-bb44a8350/"><img src="https://img.shields.io/badge/LinkedIn-rida--taki-701A3D?style=for-the-badge&amp;labelColor=190B12&amp;logoColor=F8F0F3&amp;logo=linkedin" alt="LinkedIn profile"></a>
+  <a href="mailto:takirida72@gmail.com"><img src="https://img.shields.io/badge/Email-takirida72@gmail.com-701A3D?style=for-the-badge&amp;labelColor=190B12&amp;logoColor=F8F0F3&amp;logo=gmail" alt="Email takirida72@gmail.com"></a>
+  <a href="https://github.com/Rida1019-taki"><img src="https://img.shields.io/badge/GitHub-Rida1019--taki-701A3D?style=for-the-badge&amp;labelColor=190B12&amp;logoColor=F8F0F3&amp;logo=github" alt="GitHub profile"></a>
 </p>
 
-### Frontend
+<img src="assets/title-about.svg" width="100%" alt="01 About — Hello, I'm Rida.">
+<img src="assets/about-intro.svg" width="100%" alt="About Rida Taki: Full-Stack and Mobile Developer focused on Spring Boot, React.js, Kotlin, and Flutter. Building HealthCare+ Medical Management System.">
 
-<p>
-  <img src="https://skillicons.dev/icons?i=react,flutter,html,css" />
+<img src="assets/title-recognition.svg" width="100%" alt="02 Recognition — Proof, on the record.">
+<img src="assets/achievement-card.svg" width="100%" alt="Milestones: HealthCare+ Medical Management Platform; Full-Stack Independent Learning (2024 - Present); Cisco Networking Academy Credentials.">
+
+<img src="assets/title-work.svg" width="100%" alt="03 Selected work — Products, not assignments.">
+
+<a href="https://github.com/Rida1019-taki"><img src="assets/project-healthcare.svg" width="100%" alt="HealthCare+ Medical Platform: Production-oriented healthcare management system. Spring Boot, React.js, MySQL, JWT, Docker."></a>
+<p align="center">
+  <a href="https://github.com/Rida1019-taki"><img src="https://img.shields.io/badge/Repository-HealthCare+-451126?style=for-the-badge&amp;labelColor=190B12&amp;logoColor=F8F0F3&amp;logo=github" alt="HealthCare+ Repository"></a>
+  <a href="https://rida-taki.vercel.app/"><img src="https://img.shields.io/badge/Overview-Portfolio_Showcase-451126?style=for-the-badge&amp;labelColor=190B12&amp;logoColor=F8F0F3&amp;logo=vercel" alt="Portfolio Showcase"></a>
 </p>
 
-### Backend & Databases
-
-<p>
-  <img src="https://skillicons.dev/icons?i=spring,mysql,sqlite,firebase" />
+<a href="https://github.com/Rida1019-taki"><img src="assets/project-spring-react.svg" width="100%" alt="Spring Boot and React.js Projects: REST API architecture, component-driven client, MySQL/SQLite persistence."></a>
+<p align="center">
+  <a href="https://github.com/Rida1019-taki"><img src="https://img.shields.io/badge/Repository-Spring_React_App-451126?style=for-the-badge&amp;labelColor=190B12&amp;logoColor=F8F0F3&amp;logo=github" alt="Spring React Repository"></a>
 </p>
 
-### Cloud, DevOps & Tooling
-
-<p>
-  <img src="https://skillicons.dev/icons?i=git,github,maven,docker" />
+<a href="https://github.com/Rida1019-taki"><img src="assets/project-mobile.svg" width="100%" alt="Kotlin and Flutter Mobile Applications: native Android &amp; cross-platform mobile apps with Firebase and SQLite."></a>
+<p align="center">
+  <a href="https://github.com/Rida1019-taki"><img src="https://img.shields.io/badge/Repository-Mobile_Applications-451126?style=for-the-badge&amp;labelColor=190B12&amp;logoColor=F8F0F3&amp;logo=github" alt="Mobile Applications Repository"></a>
 </p>
 
----
+<img src="assets/title-toolkit.svg" width="100%" alt="04 Toolkit — The tools I reach for.">
+<img src="assets/tech-constellation.svg" width="100%" alt="Tech stack: Java, JavaScript, Kotlin, Dart, Python, React.js, Flutter, Spring Boot, REST APIs, MySQL, SQLite, Firebase, Docker, Git.">
 
-## Featured Projects
+<img src="assets/title-commits.svg" width="100%" alt="05 Commit log — A year of building.">
+<a href="https://github.com/Rida1019-taki"><img src="assets/contrib-heatmap.svg" width="100%" alt="Real GitHub contributions: 549 contributions in the last year, current streak 1 day, longest streak 13 days."></a>
 
-<details>
-<summary><b>HealthCare+ | Medical Management Platform</b></summary>
-<br>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Rida1019-taki&amp;show_icons=true&amp;hide_rank=true&amp;hide_border=true&amp;border_radius=16&amp;bg_color=190B12&amp;title_color=E5B5C7&amp;text_color=B6A3AC&amp;icon_color=C77B9B&amp;custom_title=GitHub%20at%20a%20glance" width="410" alt="GitHub stats for Rida1019-taki">
+  &nbsp;
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rida1019-taki&amp;layout=compact&amp;hide_border=true&amp;border_radius=16&amp;bg_color=190B12&amp;title_color=E5B5C7&amp;text_color=B6A3AC" width="370" alt="Top languages for Rida1019-taki">
+</p>
 
-Production-oriented healthcare management system focused on appointment flow, patient records, and secure role-based access for operational reliability.
+<img src="assets/title-certifications.svg" width="100%" alt="06 Certifications — Cisco credentials, verified.">
+<img src="assets/certifications-card.svg" width="100%" alt="Certifications: Cisco Networking Academy — Python Essentials 1, Introduction à la Cybersécurité, Les bases du matériel informatique.">
 
-| Metric | Value |
-|---|---|
-| Stack | Spring Boot, React.js, MySQL, JWT, Docker |
-| Scale | Multi-module architecture with patient, doctor, scheduling, and reporting domains |
-| Performance | Optimized API response patterns and frontend state management for smooth clinical workflows |
-| Security | JWT authentication, role-based authorization, secure API boundaries |
-| Impact | Reduced administrative friction and improved consistency of care operations |
-| Repository | [View Project](https://github.com/Rida1019-taki) |
+<p align="center">
+  <a href="./Python%20Essentials%201.pdf"><img src="https://img.shields.io/badge/PDF_Credential-Python_Essentials_1-451126?style=for-the-badge&amp;labelColor=190B12&amp;logoColor=F8F0F3&amp;logo=cisco" alt="Python Essentials 1 PDF"></a>
+  <a href="./Introduction%20%C3%A0%20la%20cybers%C3%A9curit%C3%A9.pdf"><img src="https://img.shields.io/badge/PDF_Credential-Cybers%C3%A9curit%C3%A9-451126?style=for-the-badge&amp;labelColor=190B12&amp;logoColor=F8F0F3&amp;logo=cisco" alt="Cybersécurité PDF"></a>
+  <a href="./Les%20bases%20du%20mat%C3%A9riel%20informatique.pdf"><img src="https://img.shields.io/badge/PDF_Credential-Mat%C3%A9riel_Informatique-451126?style=for-the-badge&amp;labelColor=190B12&amp;logoColor=F8F0F3&amp;logo=cisco" alt="Matériel Informatique PDF"></a>
+</p>
 
-This project emphasizes enterprise backend discipline, API contract clarity, and user-flow reliability required in high-trust domains.
+<img src="assets/title-connect.svg" width="100%" alt="07 Connect — Let's build something scalable.">
 
-</details>
+<p align="center">
+  <a href="mailto:takirida72@gmail.com"><img src="https://img.shields.io/badge/Email-takirida72@gmail.com-701A3D?style=for-the-badge&amp;labelColor=190B12&amp;logoColor=F8F0F3&amp;logo=gmail" alt="Email takirida72@gmail.com"></a>
+  <a href="https://www.linkedin.com/in/rida-taki-bb44a8350/"><img src="https://img.shields.io/badge/LinkedIn-rida--taki-701A3D?style=for-the-badge&amp;labelColor=190B12&amp;logoColor=F8F0F3&amp;logo=linkedin" alt="LinkedIn profile"></a>
+  <a href="https://rida-taki.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-rida--taki.vercel.app-701A3D?style=for-the-badge&amp;labelColor=190B12&amp;logoColor=F8F0F3&amp;logo=vercel" alt="Portfolio website"></a>
+  <a href="https://github.com/Rida1019-taki"><img src="https://img.shields.io/badge/GitHub-Rida1019--taki-701A3D?style=for-the-badge&amp;labelColor=190B12&amp;logoColor=F8F0F3&amp;logo=github" alt="GitHub profile"></a>
+</p>
 
-<details>
-<summary><b>Spring Boot + React.js Learning Project</b></summary>
-<br>
-
-Full-stack practice project focused on improving backend API development and frontend integration skills.
-
-| Metric | Value |
-|---|---|
-| Stack | Java, Spring Boot, React.js, SQLite |
-| Scale | Learning-focused modular structure with multiple API routes |
-| Performance | Improved request handling and component rendering practices |
-| Security | Basic authentication and secure API usage practices |
-| Impact | Stronger practical understanding of full stack architecture |
-| Repository | [View Project](https://github.com/Rida1019-taki) |
-
-This project is centered on hands-on learning and clean implementation of backend-to-frontend workflows.
-
-</details>
-
-<details>
-<summary><b>Kotlin / Flutter Practice Applications</b></summary>
-<br>
-
-Mobile-oriented practice applications developed to strengthen cross-platform and native development skills.
-
-| Metric | Value |
-|---|---|
-| Stack | Kotlin, Flutter, Firebase, SQLite |
-| Scale | Feature-based learning projects for mobile UI and local/cloud data handling |
-| Performance | Focus on smooth UI behavior and efficient state updates |
-| Security | Basic secure data handling practices in app flows |
-| Impact | Improved capability to build and ship mobile features |
-| Repository | [View Project](https://github.com/Rida1019-taki) |
-
-These projects helped deepen practical mobile engineering skills alongside web and backend development.
-
-</details>
-
----
-
-## Experience
-
-### Full-Stack Development Projects | Independent Learning
-**Date Range:** 2024 - Present
-
-Building and improving software projects with a focus on backend development using Spring Boot and frontend development using React.js.
-
-- Developing REST API fundamentals and backend logic in Java.
-- Building responsive interfaces and component-driven UI with React.js.
-- Practicing database integration using MySQL and SQLite.
-- Expanding mobile development experience with Kotlin and Flutter.
-
-**Skills:** `Java` `Spring Boot` `React.js` `REST APIs` `MySQL` `SQLite` `Kotlin` `Flutter` `HTML` `CSS` `JavaScript`
-
----
-
-## Achievements
-
-<div align="center">
-
-| Recognition | Details |
-|---|---|
-| HealthCare+ Development | Actively building a medical management system as a full-stack project |
-| Continuous Learning | Ongoing improvement in Spring Boot backend and React.js frontend development |
-| Multi-Platform Practice | Practical project work across web and mobile development stacks |
-
-</div>
-
----
-
-## Certifications
-
-### Cisco
-
-![Cisco Networking Academy](https://img.shields.io/badge/Cisco%20Networking%20Academy-Les%20bases%20du%20materiel%20informatique-111827?style=for-the-badge&logo=cisco&logoColor=1ba0d7)
-[PDF](./Les%20bases%20du%20mat%C3%A9riel%20informatique.pdf)
-
-![Cisco Networking Academy](https://img.shields.io/badge/Cisco%20Networking%20Academy-Python%20Essentials%201-1f2937?style=for-the-badge&logo=cisco&logoColor=1ba0d7)
-[PDF](./Python%20Essentials%201.pdf)
-
-![Cisco Networking Academy](https://img.shields.io/badge/Cisco%20Networking%20Academy-Introduction%20a%20la%20Cybersecurite-111827?style=for-the-badge&logo=cisco&logoColor=1ba0d7)
-[PDF](./Introduction%20%C3%A0%20la%20cybers%C3%A9curit%C3%A9.pdf)
-
----
-
-## Coding Profiles
-
-[![LeetCode](https://img.shields.io/badge/LeetCode-Problem%20Solving-111827?style=for-the-badge&logo=leetcode&logoColor=ffa116)](https://leetcode.com/)
-[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-Coding%20Practice-1f2937?style=for-the-badge&logo=geeksforgeeks&logoColor=2f8d46)](https://www.geeksforgeeks.org/)
-[![HackerRank](https://img.shields.io/badge/HackerRank-Skills%20Validation-111827?style=for-the-badge&logo=hackerrank&logoColor=00ea64)](https://www.hackerrank.com/)
-[![CodeChef](https://img.shields.io/badge/CodeChef-Competitive%20Programming-1f2937?style=for-the-badge&logo=codechef&logoColor=white)](https://www.codechef.com/)
-
----
-
-## GitHub Analytics
-
-<div align="center">
-
-![](https://github-readme-stats.vercel.app/api?username=Rida1019-taki&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&rank_icon=github)
-![](https://streak-stats.demolab.com?user=Rida1019-taki&theme=tokyonight&hide_border=true&background=00000000)
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Rida1019-taki&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000)
-
-</div>
-
----
-
-## GitHub Trophies
-
-<div align="center">
-
-![](https://github-profile-trophy.vercel.app/?username=Rida1019-taki&theme=onestar&no-frame=true&no-bg=true&margin-w=10&margin-h=10)
-
-</div>
-
----
-
-## Contribution Activity
-
-<div align="center">
-
-![](https://github-readme-activity-graph.vercel.app/graph?username=Rida1019-taki&bg_color=0b1020&color=c4b5fd&line=818cf8&point=e0e7ff&area=true&hide_border=true)
-
-</div>
-
----
-
-## Contribution Snake
-
-<div align="center">
-
-![snake gif](https://raw.githubusercontent.com/Rida1019-taki/Rida1019-taki/output/github-contribution-grid-snake-dark.svg)
-
-</div>
-
----
-
-## Current Focus
-
-```yaml
-Learning:
-  - Spring Boot (backend development)
-  - React.js (frontend development)
-  - Clean full-stack architecture practices
-
-Building:
-  - HealthCare+ medical management platform
-  - Full-stack projects with Java and React.js
-
-Exploring:
-  - Kotlin and Flutter mobile applications
-  - Better API and database design patterns
-
-Open To:
-  - Full Stack Developer opportunities
-  - Backend Developer opportunities
-  - Software engineering internships
+<a href="https://rida-taki.vercel.app/">
+  <img src="assets/footer-signature.svg" width="100%" alt="Rida Taki — Turning ideas into clean, scalable software.">
+</a>

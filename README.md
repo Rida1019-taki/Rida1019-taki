@@ -1,14 +1,30 @@
 <div align="center">
 
-<!-- Hero Section: Monochrome ASCII portrait & 3D ASCII wordmark -->
-<h3><code>rida@github ~ $ whoami</code></h3>
+<!-- Live Contribution Heatmap (Auto-refreshed daily with real data) -->
+<h3><code>rida@github ~ $ ./contributions.sh --live</code></h3>
+
+<img src="./contrib-heatmap.svg" width="860" alt="Rida Taki — Live Contributions Heatmap" />
+
+<br>
+<br>
+
+<!-- Terminal Hero: Monochrome ASCII portrait & Neofetch Info Card -->
+<h3><code>rida@github ~ $ neofetch --user rida</code></h3>
 
 <table>
 <tr>
 <td valign="top"><img src="./avi-ascii.svg" width="370" alt="Rida Taki — ASCII portrait" /></td>
-<td valign="top"><img src="./wordmark.svg" width="490" alt="RIDA — 3D ASCII wordmark" /></td>
+<td valign="top"><img src="./info-card.svg" width="490" alt="Rida Taki — Neofetch Info Card" /></td>
 </tr>
 </table>
+
+<br>
+<br>
+
+<!-- 3D Terminal Wordmark Banner -->
+<h3><code>rida@github ~ $ ./banner.sh</code></h3>
+
+<img src="./wordmark.svg" width="860" alt="RIDA TAKI — 3D Terminal Wordmark" />
 
 <br>
 <br>
@@ -172,7 +188,7 @@ Building and improving software projects with a focus on backend development usi
 [PDF](./Les%20bases%20du%20mat%C3%A9riel%20informatique.pdf)
 
 ![Cisco Networking Academy](https://img.shields.io/badge/Cisco%20Networking%20Academy-Python%20Essentials%201-1f2937?style=for-the-badge&logo=cisco&logoColor=1ba0d7)
-[PDF](./Python%20Essentials%1.pdf)
+[PDF](./Python%20Essentials%201.pdf)
 
 ![Cisco Networking Academy](https://img.shields.io/badge/Cisco%20Networking%20Academy-Introduction%20a%20la%20Cybersecurite-111827?style=for-the-badge&logo=cisco&logoColor=1ba0d7)
 [PDF](./Introduction%20%C3%A0%20la%20cybers%C3%A9curit%C3%A9.pdf)

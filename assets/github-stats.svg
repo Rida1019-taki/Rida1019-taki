@@ -41,7 +41,7 @@
   <line x1="20" y1="52" x2="565" y2="52" stroke="#2D111E" stroke-width="1" />
 
   <!-- Big Stat (Contributions) -->
-  <text class="serif-title" x="24" y="104" fill="url(#stat-glow)" font-size="46" font-weight="bold">552</text>
+  <text class="serif-title" x="24" y="104" fill="url(#stat-glow)" font-size="46" font-weight="bold">556</text>
   <text class="mono" x="145" y="88" fill="#C77B9B" font-size="11" font-weight="700" letter-spacing="1px">CONTRIBUTIONS</text>
   <text class="mono" x="145" y="104" fill="#8E5B70" font-size="10.5">documented over past 365 days</text>
 
@@ -54,7 +54,7 @@
   <!-- Box 2: Active Days -->
   <rect class="subbox" x="302" y="128" width="263" height="76" />
   <text class="mono" x="316" y="150" fill="#8E5B70" font-size="10" font-weight="700" letter-spacing="1px">ACTIVE COMMIT DAYS</text>
-  <text class="serif-title" x="316" y="182" fill="#F8F0F3" font-size="22" font-weight="bold">168 <tspan font-size="13" font-family="ui-monospace" fill="#C77B9B" font-weight="normal">Days Logged</tspan></text>
+  <text class="serif-title" x="316" y="182" fill="#F8F0F3" font-size="22" font-weight="bold">169 <tspan font-size="13" font-family="ui-monospace" fill="#C77B9B" font-weight="normal">Days Logged</tspan></text>
 
   <!-- Box 3: Longest Streak -->
   <rect class="subbox" x="20" y="218" width="262" height="76" />

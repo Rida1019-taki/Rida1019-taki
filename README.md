@@ -37,13 +37,11 @@
 <img src="assets/tech-constellation.svg" width="100%" alt="Tech stack: Java, JavaScript, Kotlin, Dart, Python, React.js, Flutter, Spring Boot, REST APIs, MySQL, SQLite, Firebase, Docker, Git.">
 
 <img src="assets/title-commits.svg" width="100%" alt="05 Commit log — A year of building.">
-<a href="https://github.com/Rida1019-taki"><img src="assets/contrib-heatmap.svg" width="100%" alt="Real GitHub contributions: 549 contributions in the last year, current streak 1 day, longest streak 13 days."></a>
+<a href="https://github.com/Rida1019-taki"><img src="assets/contrib-heatmap.svg" width="100%" alt="Real GitHub contributions: 552 contributions in the last year, current streak 3 days, longest streak 13 days."></a>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Rida1019-taki&amp;show_icons=true&amp;hide_rank=true&amp;hide_border=true&amp;border_radius=16&amp;bg_color=190B12&amp;title_color=E5B5C7&amp;text_color=B6A3AC&amp;icon_color=C77B9B&amp;custom_title=GitHub%20at%20a%20glance" width="410" alt="GitHub stats for Rida1019-taki">
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rida1019-taki&amp;layout=compact&amp;hide_border=true&amp;border_radius=16&amp;bg_color=190B12&amp;title_color=E5B5C7&amp;text_color=B6A3AC" width="370" alt="Top languages for Rida1019-taki">
-</p>
+<a href="https://github.com/Rida1019-taki?tab=repositories">
+  <img src="assets/github-stats.svg" width="100%" alt="GitHub Metrics and Language Profile: 552 contributions, 46 public repositories, 168 active commit days, 13-day longest streak, primary languages Java, JavaScript, TypeScript, HTML/CSS, Python and Kotlin.">
+</a>
 
 <img src="assets/title-certifications.svg" width="100%" alt="06 Certifications — Cisco credentials, verified.">
 <img src="assets/certifications-card.svg" width="100%" alt="Certifications: Cisco Networking Academy — Python Essentials 1, Introduction à la Cybersécurité, Les bases du matériel informatique.">

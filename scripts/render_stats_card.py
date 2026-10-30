@@ -1,0 +1,175 @@
+#!/usr/bin/env python3
+"""
+Generate a luxury burgundy-themed dual SVG card for GitHub Velocity and Language Breakdown.
+100% offline, local, valid XML, zero external dependencies, never broken.
+"""
+import os
+import json
+import xml.etree.ElementTree as ET
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
+DATA_FILE = os.path.join(ROOT, "data", "contributions.json")
+OUT_PATHS = [
+    os.path.join(ROOT, "assets", "github-stats.svg"),
+]
+
+def load_data():
+    if os.path.exists(DATA_FILE):
+        with open(DATA_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {
+        "total_contributions": 552,
+        "active_days": 168,
+        "avg_per_active_day": 3.3,
+        "longest_streak": {"length": 13},
+    }
+
+def generate_svg():
+    data = load_data()
+    total = data.get("total_contributions", 552)
+    active_days = data.get("active_days", 168)
+    longest_streak = data.get("longest_streak", {}).get("length", 13)
+    avg_per_day = data.get("avg_per_active_day", 3.3)
+
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
+  <defs>
+    <linearGradient id="wine-sheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#451126" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#190B12" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="stat-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F8F0F3" />
+      <stop offset="100%" stop-color="#E5B5C7" />
+    </linearGradient>
+    <clipPath id="multi-bar-clip">
+      <rect x="639" y="72" width="537" height="12" rx="6" />
+    </clipPath>
+  </defs>
+
+  <style>
+    .card {{ fill: #190B12; stroke: #451126; stroke-width: 1.2px; }}
+    .subbox {{ fill: #10070C; stroke: #2D111E; stroke-width: 1px; rx: 8px; }}
+    .tag {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; }}
+    .serif-title {{ font-family: Georgia, 'Times New Roman', serif; }}
+    .mono {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+  </style>
+
+  <!-- ==================== LEFT CARD: GITHUB STATS ==================== -->
+  <rect class="card" x="0" y="0" width="585" height="320" rx="16" />
+  <rect x="0" y="0" width="585" height="320" rx="16" fill="url(#wine-sheen)" />
+
+  <!-- Dots & Tag -->
+  <circle cx="28" cy="28" r="4.5" fill="#701A3D" />
+  <circle cx="44" cy="28" r="4.5" fill="#A22B58" />
+  <circle cx="60" cy="28" r="4.5" fill="#C77B9B" />
+  <text class="tag" x="82" y="32" fill="#8E5B70">RIDA1019-TAKI // GITHUB METRICS</text>
+
+  <!-- Live Status Badge -->
+  <rect x="475" y="16" width="90" height="24" rx="12" fill="#451126" stroke="#701A3D" stroke-width="0.8" />
+  <circle cx="490" cy="28" r="3.5" fill="#C77B9B" />
+  <text class="mono" x="500" y="32" fill="#F8F0F3" font-size="10.5" font-weight="600" letter-spacing="0.5px">ACTIVE</text>
+
+  <!-- Divider Line -->
+  <line x1="20" y1="52" x2="565" y2="52" stroke="#2D111E" stroke-width="1" />
+
+  <!-- Big Stat (Contributions) -->
+  <text class="serif-title" x="24" y="104" fill="url(#stat-glow)" font-size="46" font-weight="bold">{total}</text>
+  <text class="mono" x="145" y="88" fill="#C77B9B" font-size="11" font-weight="700" letter-spacing="1px">CONTRIBUTIONS</text>
+  <text class="mono" x="145" y="104" fill="#8E5B70" font-size="10.5">documented over past 365 days</text>
+
+  <!-- 4 Metrics Sub-boxes -->
+  <!-- Box 1: Public Repositories -->
+  <rect class="subbox" x="20" y="128" width="262" height="76" />
+  <text class="mono" x="34" y="150" fill="#8E5B70" font-size="10" font-weight="700" letter-spacing="1px">REPOSITORIES</text>
+  <text class="serif-title" x="34" y="182" fill="#F8F0F3" font-size="22" font-weight="bold">46 <tspan font-size="13" font-family="ui-monospace" fill="#C77B9B" font-weight="normal">Public Projects</tspan></text>
+
+  <!-- Box 2: Active Days -->
+  <rect class="subbox" x="302" y="128" width="263" height="76" />
+  <text class="mono" x="316" y="150" fill="#8E5B70" font-size="10" font-weight="700" letter-spacing="1px">ACTIVE COMMIT DAYS</text>
+  <text class="serif-title" x="316" y="182" fill="#F8F0F3" font-size="22" font-weight="bold">{active_days} <tspan font-size="13" font-family="ui-monospace" fill="#C77B9B" font-weight="normal">Days Logged</tspan></text>
+
+  <!-- Box 3: Longest Streak -->
+  <rect class="subbox" x="20" y="218" width="262" height="76" />
+  <text class="mono" x="34" y="240" fill="#8E5B70" font-size="10" font-weight="700" letter-spacing="1px">LONGEST STREAK</text>
+  <text class="serif-title" x="34" y="272" fill="#F8F0F3" font-size="22" font-weight="bold">{longest_streak} <tspan font-size="13" font-family="ui-monospace" fill="#C77B9B" font-weight="normal">Consecutive Days</tspan></text>
+
+  <!-- Box 4: Velocity -->
+  <rect class="subbox" x="302" y="218" width="263" height="76" />
+  <text class="mono" x="316" y="240" fill="#8E5B70" font-size="10" font-weight="700" letter-spacing="1px">DAILY VELOCITY</text>
+  <text class="serif-title" x="316" y="272" fill="#F8F0F3" font-size="22" font-weight="bold">{avg_per_day} <tspan font-size="13" font-family="ui-monospace" fill="#C77B9B" font-weight="normal">Per Active Day</tspan></text>
+
+  <!-- ==================== RIGHT CARD: TOP LANGUAGES ==================== -->
+  <rect class="card" x="615" y="0" width="585" height="320" rx="16" />
+  <rect x="615" y="0" width="585" height="320" rx="16" fill="url(#wine-sheen)" />
+
+  <!-- Dots & Tag -->
+  <circle cx="643" cy="28" r="4.5" fill="#701A3D" />
+  <circle cx="659" cy="28" r="4.5" fill="#A22B58" />
+  <circle cx="675" cy="28" r="4.5" fill="#C77B9B" />
+  <text class="tag" x="697" y="32" fill="#8E5B70">TOP LANGUAGES // CODEBASE PROFILE</text>
+
+  <!-- Repos Badge -->
+  <rect x="1080" y="16" width="100" height="24" rx="12" fill="#451126" stroke="#701A3D" stroke-width="0.8" />
+  <text class="mono" x="1130" y="32" text-anchor="middle" fill="#E5B5C7" font-size="10" font-weight="600" letter-spacing="0.5px">46 REPOS</text>
+
+  <!-- Divider Line -->
+  <line x1="635" y1="52" x2="1180" y2="52" stroke="#2D111E" stroke-width="1" />
+
+  <!-- Segmented Multi-Bar -->
+  <g clip-path="url(#multi-bar-clip)">
+    <rect x="639" y="72" width="203" height="12" fill="#C77B9B" />
+    <rect x="842" y="72" width="145" height="12" fill="#E5B5C7" />
+    <rect x="987" y="72" width="72" height="12" fill="#A22B58" />
+    <rect x="1059" y="72" width="58" height="12" fill="#701A3D" />
+    <rect x="1117" y="72" width="59" height="12" fill="#451126" />
+  </g>
+
+  <!-- Language 1: Java -->
+  <circle cx="648" cy="124" r="5" fill="#C77B9B" />
+  <text class="serif-title" x="664" y="128" fill="#F8F0F3" font-size="14.5" font-weight="bold">Java <tspan font-family="ui-monospace" font-size="11.5" fill="#8E5B70" font-weight="normal">(Spring Boot, Enterprise)</tspan></text>
+  <rect x="930" y="120" width="170" height="7" rx="3.5" fill="#10070C" stroke="#2D111E" />
+  <rect x="930" y="120" width="64" height="7" rx="3.5" fill="#C77B9B" />
+  <text class="mono" x="1176" y="128" text-anchor="end" fill="#E5B5C7" font-size="12" font-weight="700">37.8%</text>
+
+  <!-- Language 2: JavaScript -->
+  <circle cx="648" cy="164" r="5" fill="#E5B5C7" />
+  <text class="serif-title" x="664" y="168" fill="#F8F0F3" font-size="14.5" font-weight="bold">JavaScript <tspan font-family="ui-monospace" font-size="11.5" fill="#8E5B70" font-weight="normal">(React.js, Full-Stack)</tspan></text>
+  <rect x="930" y="160" width="170" height="7" rx="3.5" fill="#10070C" stroke="#2D111E" />
+  <rect x="930" y="160" width="46" height="7" rx="3.5" fill="#E5B5C7" />
+  <text class="mono" x="1176" y="168" text-anchor="end" fill="#E5B5C7" font-size="12" font-weight="700">27.0%</text>
+
+  <!-- Language 3: TypeScript -->
+  <circle cx="648" cy="204" r="5" fill="#A22B58" />
+  <text class="serif-title" x="664" y="208" fill="#F8F0F3" font-size="14.5" font-weight="bold">TypeScript <tspan font-family="ui-monospace" font-size="11.5" fill="#8E5B70" font-weight="normal">(Typed Web Apps)</tspan></text>
+  <rect x="930" y="200" width="170" height="7" rx="3.5" fill="#10070C" stroke="#2D111E" />
+  <rect x="930" y="200" width="18" height="7" rx="3.5" fill="#A22B58" />
+  <text class="mono" x="1176" y="208" text-anchor="end" fill="#E5B5C7" font-size="12" font-weight="700">10.8%</text>
+
+  <!-- Language 4: HTML & CSS -->
+  <circle cx="648" cy="244" r="5" fill="#701A3D" />
+  <text class="serif-title" x="664" y="248" fill="#F8F0F3" font-size="14.5" font-weight="bold">HTML5 &amp; CSS3 <tspan font-family="ui-monospace" font-size="11.5" fill="#8E5B70" font-weight="normal">(Modern UI)</tspan></text>
+  <rect x="930" y="240" width="170" height="7" rx="3.5" fill="#10070C" stroke="#2D111E" />
+  <rect x="930" y="240" width="23" height="7" rx="3.5" fill="#701A3D" />
+  <text class="mono" x="1176" y="248" text-anchor="end" fill="#E5B5C7" font-size="12" font-weight="700">13.5%</text>
+
+  <!-- Language 5: Python & Mobile -->
+  <circle cx="648" cy="284" r="5" fill="#451126" />
+  <text class="serif-title" x="664" y="288" fill="#F8F0F3" font-size="14.5" font-weight="bold">Python &amp; Kotlin <tspan font-family="ui-monospace" font-size="11.5" fill="#8E5B70" font-weight="normal">(Scripting &amp; Mobile)</tspan></text>
+  <rect x="930" y="280" width="170" height="7" rx="3.5" fill="#10070C" stroke="#2D111E" />
+  <rect x="930" y="280" width="19" height="7" rx="3.5" fill="#451126" />
+  <text class="mono" x="1176" y="288" text-anchor="end" fill="#E5B5C7" font-size="12" font-weight="700">10.9%</text>
+</svg>"""
+
+    # Validate XML
+    ET.fromstring(svg)
+
+    for p in OUT_PATHS:
+        os.makedirs(os.path.dirname(p), exist_ok=True)
+        with open(p, "w", encoding="utf-8") as f:
+            f.write(svg)
+        print(f"Generated {p} successfully.")
+
+if __name__ == "__main__":
+    generate_svg()

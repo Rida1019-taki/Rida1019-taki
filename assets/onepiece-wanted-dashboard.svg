@@ -93,12 +93,12 @@
       <!-- Tile 2: Commits -->
       <rect class="kpi-tile" x="370" y="0" width="345" height="90" />
       <text class="mono" x="390" y="26" fill="#64748B" font-size="10" font-weight="700" letter-spacing="1px">ANNUAL BOUNTY EARNED</text>
-      <text class="serif" x="390" y="64" fill="#F8FAFC" font-size="32" font-weight="bold">554 <tspan font-family="ui-monospace" font-size="14" fill="#F59E0B" font-weight="normal">Commits Logged</tspan></text>
+      <text class="serif" x="390" y="64" fill="#F8FAFC" font-size="32" font-weight="bold">597 <tspan font-family="ui-monospace" font-size="14" fill="#F59E0B" font-weight="normal">Commits Logged</tspan></text>
 
       <!-- Tile 3: Active Days -->
       <rect class="kpi-tile" x="0" y="105" width="345" height="90" />
       <text class="mono" x="20" y="131" fill="#64748B" font-size="10" font-weight="700" letter-spacing="1px">ACTIVE SAILING DAYS</text>
-      <text class="serif" x="20" y="169" fill="#F8FAFC" font-size="32" font-weight="bold">169 <tspan font-family="ui-monospace" font-size="14" fill="#10B981" font-weight="normal">Days Active</tspan></text>
+      <text class="serif" x="20" y="169" fill="#F8FAFC" font-size="32" font-weight="bold">175 <tspan font-family="ui-monospace" font-size="14" fill="#10B981" font-weight="normal">Days Active</tspan></text>
 
       <!-- Tile 4: Streak -->
       <rect class="kpi-tile" x="370" y="105" width="345" height="90" />

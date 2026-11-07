@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- 🎬 00 // HERO: GRAND LINE LOG POSE BROADCAST -->
-<img src="assets/onepiece-hero.svg?v=2" alt="Ahoy, I'm Rida Taki — Full-Stack &amp; Mobile Developer" width="100%"/>
+<img src="assets/onepiece-hero.svg?v=3" alt="Ahoy, I'm Rida Taki — Full-Stack &amp; Mobile Developer" width="100%"/>
 
 <br/><br/>
 
@@ -10,72 +10,36 @@
 <br/>
 
 <!-- 🏴‍☠️ 01 // MY PIRATE CODE: THE WILL OF D -->
-<img src="assets/onepiece-code.svg?v=2" alt="My Pirate Code — The Will of D in every commit" width="100%"/>
+<img src="assets/onepiece-code.svg?v=3" alt="My Pirate Code — The Will of D in every commit" width="100%"/>
 
 <br/><br/>
 
 <!-- ⚡ 02 // DEVIL FRUIT & HAKI ARSENAL -->
-<img src="assets/onepiece-haki-stack.svg?v=2" alt="Devil Fruit &amp; Haki Arsenal — Tech Stack" width="100%"/>
+<img src="assets/onepiece-haki-stack.svg?v=3" alt="Devil Fruit &amp; Haki Arsenal — Tech Stack" width="100%"/>
 
 <br/><br/>
 
 <!-- 🪪 03 // PIRATE WANTED POSTER & FLEET DASHBOARD -->
-<img src="assets/onepiece-wanted-dashboard.svg?v=2" alt="Marine Wanted Poster 552M Berries and Grand Line Fleet Dashboard" width="100%"/>
+<img src="assets/onepiece-wanted-dashboard.svg?v=3" alt="Marine Wanted Poster 552M Berries and Grand Line Fleet Dashboard" width="100%"/>
 
 <br/><br/>
 
-</div>
+<!-- ⚔️ 04 // GRAND LINE LEGENDARY VOYAGES -->
+<img src="assets/onepiece-voyages.svg?v=3" alt="Grand Line Legendary Voyages — Featured Products &amp; Expeditions" width="100%"/>
 
-## 🏴‍☠️ Grand Line Legendary Voyages
+<p align="center">
+  <a href="https://github.com/Rida1019-taki"><img src="https://img.shields.io/badge/HealthCare+-Repository-f59e0b?style=for-the-badge&amp;logo=github&amp;logoColor=ffd700&amp;labelColor=0f172a" alt="HealthCare+ Repository"/></a>
+  &nbsp;
+  <a href="https://github.com/Rida1019-taki"><img src="https://img.shields.io/badge/Spring_React-Repository-0284c7?style=for-the-badge&amp;logo=github&amp;logoColor=38bdf8&amp;labelColor=0f172a" alt="Spring React Repository"/></a>
+  &nbsp;
+  <a href="https://github.com/Rida1019-taki"><img src="https://img.shields.io/badge/Mobile_Apps-Repository-e11d48?style=for-the-badge&amp;logo=github&amp;logoColor=fda4af&amp;labelColor=0f172a" alt="Mobile Apps Repository"/></a>
+  &nbsp;
+  <a href="https://rida-taki.vercel.app/"><img src="https://img.shields.io/badge/Live_Portfolio-Demo-10b981?style=for-the-badge&amp;logo=vercel&amp;logoColor=6ee7b7&amp;labelColor=0f172a" alt="Live Portfolio Demo"/></a>
+  &nbsp;
+  <a href="https://github.com/Rida1019-taki?tab=repositories"><img src="https://img.shields.io/badge/All_46_Repos-Explore-8b5cf6?style=for-the-badge&amp;logo=git&amp;logoColor=c084fc&amp;labelColor=0f172a" alt="Explore All Repos"/></a>
+</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Voyage / Mission</th>
-      <th>Log Entry (What it is)</th>
-      <th>Haki &amp; Fruit Used</th>
-      <th align="center">Bounty Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://github.com/Rida1019-taki"><b>🏥 HealthCare+ Platform</b></a></td>
-      <td>Production-ready medical management system with multi-module domain architecture and JWT security</td>
-      <td><code>Spring Boot</code> <code>React.js</code> <code>MySQL</code> <code>Docker</code></td>
-      <td align="center"><b>👑 S-Rank</b></td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/Rida1019-taki"><b>🎓 Spring &amp; React Ecosystem</b></a></td>
-      <td>Full-stack educational platform with clean layered MVC pattern, JPA persistence, and REST APIs</td>
-      <td><code>Java</code> <code>Spring Boot</code> <code>React.js</code> <code>REST</code></td>
-      <td align="center"><b>⚓ Active</b></td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/Rida1019-taki"><b>📱 Cross-Ocean Mobile Apps</b></a></td>
-      <td>Native Android and cross-platform apps with real-time Firebase sync, SQLite local storage, and responsive UI</td>
-      <td><code>Kotlin</code> <code>Flutter</code> <code>Dart</code> <code>Firebase</code></td>
-      <td align="center"><b>🚀 Shipped</b></td>
-    </tr>
-    <tr>
-      <td><a href="./Python%20Essentials%201.pdf"><b>🛡️ Cisco Marine Academy</b></a></td>
-      <td>Three verified certifications: Python Essentials 1, Introduction to Cybersecurity, and IT Hardware Basics</td>
-      <td><code>Python</code> <code>Cybersecurity</code> <code>Networking</code></td>
-      <td align="center"><b>📜 Verified</b></td>
-    </tr>
-    <tr>
-      <td><a href="https://rida-taki.vercel.app/"><b>🧭 Grand Line Portfolio</b></a></td>
-      <td>Interactive digital portfolio and live project showcase navigating modern full-stack web experiences</td>
-      <td><code>TypeScript</code> <code>React</code> <code>Tailwind</code> <code>Vercel</code></td>
-      <td align="center"><b>⭐ Live Demo</b></td>
-    </tr>
-  </tbody>
-</table>
-
-<div align="center">
-
-<a href="https://github.com/Rida1019-taki?tab=repositories"><b>→ Explore all 46 Charted Repositories</b></a>
-
-<br/><br/>
+<br/>
 
 <img src="assets/strawhat-flag.gif" alt="Straw Hat Pirate Flag Waving" width="180"/>
 
@@ -83,23 +47,24 @@
 
 *Every commit charts another nautical league across the digital sea — rebuilt automatically every day.*
 
-<img src="assets/onepiece-heatmap.svg?v=2" alt="Grand Line 552 Nautical Miles Log" width="100%"/>
+<img src="assets/onepiece-heatmap.svg?v=3" alt="Grand Line 552 Nautical Miles Log" width="100%"/>
 
 <br/><br/>
 
 <!-- 🐌 05 // JOIN THE CREW: DEN DEN MUSHI ALLIANCE -->
-<img src="assets/onepiece-connect.svg?v=2" alt="Join the Crew — Den Den Mushi Transmission" width="100%"/>
+<img src="assets/onepiece-connect.svg?v=3" alt="Join the Crew — Den Den Mushi Transmission" width="100%"/>
 
 <p align="center">
-  <a href="https://rida-taki.vercel.app/"><img src="https://img.shields.io/badge/Log_Pose-rida--taki.vercel.app-f59e0b?style=for-the-badge&amp;labelColor=0f172a&amp;logoColor=ffd700&amp;logo=vercel" alt="Portfolio Website"/></a>
-  <a href="https://www.linkedin.com/in/rida-taki-bb44a8350/"><img src="https://img.shields.io/badge/Vivre_Card-rida--taki-0284c7?style=for-the-badge&amp;labelColor=0f172a&amp;logoColor=38bdf8&amp;logo=linkedin" alt="LinkedIn Profile"/></a>
-  <a href="mailto:takirida72@gmail.com"><img src="https://img.shields.io/badge/Den_Den_Mushi-takirida72@gmail.com-dc2626?style=for-the-badge&amp;labelColor=0f172a&amp;logoColor=f87171&amp;logo=gmail" alt="Email Direct"/></a>
-  <a href="https://github.com/Rida1019-taki"><img src="https://img.shields.io/badge/Mugiwara_Fleet-Rida1019--taki-8b5cf6?style=for-the-badge&amp;labelColor=0f172a&amp;logoColor=c084fc&amp;logo=github" alt="GitHub Profile"/></a>
+  <a href="https://rida-taki.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-f59e0b?style=for-the-badge&amp;logo=vercel&amp;logoColor=070c16&amp;labelColor=0f172a" alt="Portfolio Website"/></a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/rida-taki-bb44a8350/"><img src="https://img.shields.io/badge/LinkedIn-0284c7?style=for-the-badge&amp;logo=linkedin&amp;logoColor=070c16&amp;labelColor=0f172a" alt="LinkedIn Profile"/></a>
+  &nbsp;
+  <a href="mailto:takirida72@gmail.com"><img src="https://img.shields.io/badge/Email-ef4444?style=for-the-badge&amp;logo=gmail&amp;logoColor=070c16&amp;labelColor=0f172a" alt="Email Direct"/></a>
+  &nbsp;
+  <a href="https://github.com/Rida1019-taki"><img src="https://img.shields.io/badge/GitHub-8b5cf6?style=for-the-badge&amp;logo=github&amp;logoColor=070c16&amp;labelColor=0f172a" alt="GitHub Profile"/></a>
+  &nbsp;
+  <img src="https://komarev.com/ghpvc/?username=Rida1019-taki&amp;color=f59e0b&amp;style=for-the-badge&amp;label=BOUNTY+COLLECTED" alt="Bounty Collected Profile Views"/>
 </p>
-
-<br/>
-
-<img src="https://komarev.com/ghpvc/?username=Rida1019-taki&amp;color=f59e0b&amp;style=for-the-badge&amp;label=BOUNTY+COLLECTED" alt="Bounty Collected Profile Views"/>
 
 <br/><br/>
 

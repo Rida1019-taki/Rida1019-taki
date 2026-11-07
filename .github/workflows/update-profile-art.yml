@@ -27,4 +27,4 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh Grand Line log and pirate metrics [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg assets/onepiece-heatmap.svg assets/onepiece-wanted-dashboard.svg assets/onepiece-hero.svg"
+          file_pattern: "data/contributions.json contrib-heatmap.svg assets/onepiece-heatmap.svg assets/onepiece-wanted-dashboard.svg assets/onepiece-hero.svg assets/onepiece-voyages.svg"

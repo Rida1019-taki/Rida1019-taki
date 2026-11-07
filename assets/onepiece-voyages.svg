@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 620" width="1280" height="620">
+  <defs>
+    <linearGradient id="voy-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070C16" />
+      <stop offset="100%" stop-color="#0F182B" />
+    </linearGradient>
+    <linearGradient id="gold-line-v" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="50%" stop-color="#FF4500" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+    <linearGradient id="card-glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111C30" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0B1220" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .panel { fill: url(#voy-bg); stroke: #1E293B; stroke-width: 1.5px; rx: 24px; }
+    .voy-card { fill: url(#card-glass); stroke: #23354E; stroke-width: 1.2px; rx: 16px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .serif { font-family: Georgia, 'Times New Roman', serif; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .chip { rx: 6px; stroke-width: 1px; }
+    .chip-t { font-family: ui-monospace, monospace; font-size: 11px; font-weight: 600; }
+  </style>
+
+  <rect class="panel" x="0" y="0" width="1280" height="620" />
+
+  <g transform="translate(60, 44)">
+    <text class="mono" x="0" y="0" fill="#FFD700" font-size="12" font-weight="700" letter-spacing="2px">04 // GRAND LINE LEGENDARY VOYAGES</text>
+    <text class="serif" x="0" y="38" fill="#F8FAFC" font-size="34" font-weight="bold">FEATURED PRODUCTS &amp; EXPEDITIONS</text>
+    <text class="sans" x="0" y="66" fill="#94A3B8" font-size="15">
+      Battle-tested architectures, enterprise medical management, and cross-platform mobile solutions.
+    </text>
+    <line x1="0" y1="84" x2="1160" y2="84" stroke="url(#gold-line-v)" stroke-width="2" />
+  </g>
+
+  <!-- Card 1: HealthCare+ Platform -->
+  <g transform="translate(60, 155)">
+    <rect class="voy-card" x="0" y="0" width="565" height="205" />
+    <text class="serif" x="24" y="36" fill="#F8FAFC" font-size="20" font-weight="bold">🏥 HealthCare+ Platform</text>
+    <text class="mono" x="24" y="54" fill="#F59E0B" font-size="10.5" font-weight="700" letter-spacing="1px">ENTERPRISE CLINICAL &amp; HOSPITAL SYSTEM</text>
+
+    <rect x="435" y="16" width="106" height="24" rx="12" fill="#451A03" stroke="#D97706" stroke-width="1" />
+    <text class="mono" x="488" y="32" text-anchor="middle" fill="#FDE047" font-size="10.5" font-weight="bold">👑 S-RANK</text>
+
+    <text class="sans" x="24" y="84" fill="#94A3B8" font-size="13">
+      <tspan x="24" dy="0">Production-oriented medical platform with multi-module domain separation,</tspan>
+      <tspan x="24" dy="20">strict JWT role-based security, appointment workflows, patient records,</tspan>
+      <tspan x="24" dy="20">and containerized Docker Compose microservice environment.</tspan>
+    </text>
+
+    <g transform="translate(24, 156)">
+      <rect class="chip" x="0" y="0" width="95" height="24" fill="#14532D" stroke="#22C55E" />
+      <text class="chip-t" x="47" y="16" text-anchor="middle" fill="#86EFAC">Spring Boot</text>
+      <rect class="chip" x="103" y="0" width="75" height="24" fill="#082F49" stroke="#0284C7" />
+      <text class="chip-t" x="140" y="16" text-anchor="middle" fill="#38BDF8">React.js</text>
+      <rect class="chip" x="186" y="0" width="70" height="24" fill="#172554" stroke="#3B82F6" />
+      <text class="chip-t" x="221" y="16" text-anchor="middle" fill="#93C5FD">MySQL</text>
+      <rect class="chip" x="264" y="0" width="70" height="24" fill="#0C4A6E" stroke="#0284C7" />
+      <text class="chip-t" x="299" y="16" text-anchor="middle" fill="#7DD3FC">Docker</text>
+      <rect class="chip" x="342" y="0" width="85" height="24" fill="#1E1B4B" stroke="#6366F1" />
+      <text class="chip-t" x="384" y="16" text-anchor="middle" fill="#A5B4FC">JWT Security</text>
+    </g>
+  </g>
+
+  <!-- Card 2: Spring Boot & React Ecosystem -->
+  <g transform="translate(655, 155)">
+    <rect class="voy-card" x="0" y="0" width="565" height="205" />
+    <text class="serif" x="24" y="36" fill="#F8FAFC" font-size="20" font-weight="bold">🎓 Spring &amp; React Learning Platform</text>
+    <text class="mono" x="24" y="54" fill="#38BDF8" font-size="10.5" font-weight="700" letter-spacing="1px">FULL-STACK ARCHITECTURE &amp; APIS</text>
+
+    <rect x="435" y="16" width="106" height="24" rx="12" fill="#082F49" stroke="#0284C7" stroke-width="1" />
+    <text class="mono" x="488" y="32" text-anchor="middle" fill="#7DD3FC" font-size="10.5" font-weight="bold">⚓ ACTIVE</text>
+
+    <text class="sans" x="24" y="84" fill="#94A3B8" font-size="13">
+      <tspan x="24" dy="0">Full-stack educational platform built with Controller-Service-Repository pattern,</tspan>
+      <tspan x="24" dy="20">JPA/Hibernate database persistence, automated RESTful API specs,</tspan>
+      <tspan x="24" dy="20">and an ergonomic component-driven client user interface.</tspan>
+    </text>
+
+    <g transform="translate(24, 156)">
+      <rect class="chip" x="0" y="0" width="55" height="24" fill="#172554" stroke="#3B82F6" />
+      <text class="chip-t" x="27" y="16" text-anchor="middle" fill="#93C5FD">Java</text>
+      <rect class="chip" x="63" y="0" width="95" height="24" fill="#14532D" stroke="#22C55E" />
+      <text class="chip-t" x="110" y="16" text-anchor="middle" fill="#86EFAC">Spring Boot</text>
+      <rect class="chip" x="166" y="0" width="75" height="24" fill="#082F49" stroke="#0284C7" />
+      <text class="chip-t" x="203" y="16" text-anchor="middle" fill="#38BDF8">React.js</text>
+      <rect class="chip" x="249" y="0" width="85" height="24" fill="#1E293B" stroke="#64748B" />
+      <text class="chip-t" x="291" y="16" text-anchor="middle" fill="#CBD5E1">REST APIs</text>
+      <rect class="chip" x="342" y="0" width="90" height="24" fill="#172554" stroke="#2563EB" />
+      <text class="chip-t" x="387" y="16" text-anchor="middle" fill="#60A5FA">JPA / SQL</text>
+    </g>
+  </g>
+
+  <!-- Card 3: Cross-Ocean Mobile Applications -->
+  <g transform="translate(60, 380)">
+    <rect class="voy-card" x="0" y="0" width="565" height="205" />
+    <text class="serif" x="24" y="36" fill="#F8FAFC" font-size="20" font-weight="bold">📱 Cross-Ocean Mobile Apps</text>
+    <text class="mono" x="24" y="54" fill="#FB7185" font-size="10.5" font-weight="700" letter-spacing="1px">NATIVE ANDROID &amp; MULTI-PLATFORM</text>
+
+    <rect x="435" y="16" width="106" height="24" rx="12" fill="#4C0519" stroke="#E11D48" stroke-width="1" />
+    <text class="mono" x="488" y="32" text-anchor="middle" fill="#FDA4AF" font-size="10.5" font-weight="bold">🚀 SHIPPED</text>
+
+    <text class="sans" x="24" y="84" fill="#94A3B8" font-size="13">
+      <tspan x="24" dy="0">Native Android applications engineered in Kotlin alongside cross-platform</tspan>
+      <tspan x="24" dy="20">Flutter builds, powered by real-time Firebase authentication, Firestore data,</tspan>
+      <tspan x="24" dy="20">and offline-first local SQLite caching for seamless mobile journeys.</tspan>
+    </text>
+
+    <g transform="translate(24, 156)">
+      <rect class="chip" x="0" y="0" width="95" height="24" fill="#4C0519" stroke="#E11D48" />
+      <text class="chip-t" x="47" y="16" text-anchor="middle" fill="#FDA4AF">Kotlin Native</text>
+      <rect class="chip" x="103" y="0" width="65" height="24" fill="#082F49" stroke="#0284C7" />
+      <text class="chip-t" x="135" y="16" text-anchor="middle" fill="#7DD3FC">Flutter</text>
+      <rect class="chip" x="176" y="0" width="55" height="24" fill="#082F49" stroke="#0284C7" />
+      <text class="chip-t" x="203" y="16" text-anchor="middle" fill="#38BDF8">Dart</text>
+      <rect class="chip" x="239" y="0" width="80" height="24" fill="#451A03" stroke="#D97706" />
+      <text class="chip-t" x="279" y="16" text-anchor="middle" fill="#FCD34D">Firebase</text>
+      <rect class="chip" x="327" y="0" width="65" height="24" fill="#1E293B" stroke="#64748B" />
+      <text class="chip-t" x="359" y="16" text-anchor="middle" fill="#CBD5E1">SQLite</text>
+    </g>
+  </g>
+
+  <!-- Card 4: Cisco Marine Academy Credentials -->
+  <g transform="translate(655, 380)">
+    <rect class="voy-card" x="0" y="0" width="565" height="205" />
+    <text class="serif" x="24" y="36" fill="#F8FAFC" font-size="20" font-weight="bold">🛡️ Cisco Marine Academy Protocols</text>
+    <text class="mono" x="24" y="54" fill="#34D399" font-size="10.5" font-weight="700" letter-spacing="1px">VERIFIED NETWORKING &amp; SECURITY SEALS</text>
+
+    <rect x="435" y="16" width="106" height="24" rx="12" fill="#064E3B" stroke="#10B981" stroke-width="1" />
+    <text class="mono" x="488" y="32" text-anchor="middle" fill="#6EE7B7" font-size="10.5" font-weight="bold">📜 VERIFIED</text>
+
+    <text class="sans" x="24" y="84" fill="#94A3B8" font-size="13">
+      <tspan x="24" dy="0">Three verified professional certifications from Cisco Networking Academy:</tspan>
+      <tspan x="24" dy="20">Python Essentials 1, Introduction to Cybersecurity, and IT Hardware Basics.</tspan>
+      <tspan x="24" dy="20">Backed by authentic credentials and network diagnostic mastery.</tspan>
+    </text>
+
+    <g transform="translate(24, 156)">
+      <rect class="chip" x="0" y="0" width="135" height="24" fill="#064E3B" stroke="#10B981" />
+      <text class="chip-t" x="67" y="16" text-anchor="middle" fill="#6EE7B7">Python Essentials 1</text>
+      <rect class="chip" x="143" y="0" width="145" height="24" fill="#134E4A" stroke="#0D9488" />
+      <text class="chip-t" x="215" y="16" text-anchor="middle" fill="#5EEAD4">Cybersecurity Intro</text>
+      <rect class="chip" x="296" y="0" width="130" height="24" fill="#1E293B" stroke="#64748B" />
+      <text class="chip-t" x="361" y="16" text-anchor="middle" fill="#CBD5E1">Hardware Basics</text>
+    </g>
+  </g>
+</svg>

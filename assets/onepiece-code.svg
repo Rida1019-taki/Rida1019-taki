@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" width="1280" height="520">
+  <defs>
+    <linearGradient id="code-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080E1A" />
+      <stop offset="100%" stop-color="#10192E" />
+    </linearGradient>
+    <linearGradient id="gold-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF4500" />
+      <stop offset="50%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+    <linearGradient id="card-sheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .panel { fill: url(#code-bg); stroke: #1E293B; stroke-width: 1.5px; rx: 24px; }
+    .card-box { fill: url(#card-sheen); stroke: #334155; stroke-width: 1.2px; rx: 16px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .serif { font-family: Georgia, 'Times New Roman', serif; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .badge { font-family: ui-monospace, monospace; font-size: 11px; font-weight: 600; fill: #E2E8F0; }
+  </style>
+
+  <!-- Panel Base -->
+  <rect class="panel" x="0" y="0" width="1280" height="520" />
+
+  <!-- Header -->
+  <g transform="translate(60, 48)">
+    <text class="mono" x="0" y="0" fill="#FFD700" font-size="12" font-weight="700" letter-spacing="2px">01 // MY PIRATE CODE</text>
+    <text class="serif" x="0" y="38" fill="#F8FAFC" font-size="34" font-weight="bold">THE WILL OF D. IN EVERY COMMIT</text>
+    <text class="sans" x="0" y="66" fill="#94A3B8" font-size="15" font-style="italic">
+      "Inherited Will, the Swell of the Era, and the Dreams of Its People — These are things that cannot be stopped."
+    </text>
+    <line x1="0" y1="84" x2="1160" y2="84" stroke="url(#gold-line)" stroke-width="2" />
+  </g>
+
+  <!-- 3 Grand Line Engineering Pillars -->
+  <!-- Pillar 1: Unsinkable Architectures -->
+  <g transform="translate(60, 165)">
+    <rect class="card-box" x="0" y="0" width="365" height="310" />
+    
+    <!-- Top Icon Badge -->
+    <rect x="24" y="24" width="48" height="48" rx="12" fill="#451A03" stroke="#D97706" stroke-width="1.2" />
+    <text class="sans" x="48" y="55" text-anchor="middle" font-size="24">⚓</text>
+    
+    <text class="serif" x="24" y="105" fill="#F8FAFC" font-size="20" font-weight="bold">Unsinkable Architectures</text>
+    <text class="mono" x="24" y="125" fill="#F59E0B" font-size="11" font-weight="700">SPRING BOOT &amp; DOCKER</text>
+    
+    <text class="sans" x="24" y="156" fill="#94A3B8" font-size="13.5" line-height="20px">
+      <tspan x="24" dy="0">Forging enterprise-grade REST APIs</tspan>
+      <tspan x="24" dy="20">and microservice backends that weather</tspan>
+      <tspan x="24" dy="20">high concurrency storms with zero</tspan>
+      <tspan x="24" dy="20">downtime and clean layered patterns.</tspan>
+    </text>
+
+    <!-- Tech Badges -->
+    <g transform="translate(24, 252)">
+      <rect x="0" y="0" width="90" height="26" rx="6" fill="#0F172A" stroke="#334155" />
+      <text class="badge" x="45" y="17" text-anchor="middle">Spring Boot</text>
+
+      <rect x="98" y="0" width="85" height="26" rx="6" fill="#0F172A" stroke="#334155" />
+      <text class="badge" x="140" y="17" text-anchor="middle">REST APIs</text>
+
+      <rect x="191" y="0" width="65" height="26" rx="6" fill="#0F172A" stroke="#334155" />
+      <text class="badge" x="223" y="17" text-anchor="middle">MySQL</text>
+
+      <rect x="264" y="0" width="68" height="26" rx="6" fill="#0F172A" stroke="#334155" />
+      <text class="badge" x="298" y="17" text-anchor="middle">Docker</text>
+    </g>
+  </g>
+
+  <!-- Pillar 2: Fluid Web Interfaces -->
+  <g transform="translate(457, 165)">
+    <rect class="card-box" x="0" y="0" width="365" height="310" />
+    
+    <!-- Top Icon Badge -->
+    <rect x="24" y="24" width="48" height="48" rx="12" fill="#082F49" stroke="#0284C7" stroke-width="1.2" />
+    <text class="sans" x="48" y="55" text-anchor="middle" font-size="24">🌊</text>
+    
+    <text class="serif" x="24" y="105" fill="#F8FAFC" font-size="20" font-weight="bold">Fluid Grand Line UI</text>
+    <text class="mono" x="24" y="125" fill="#38BDF8" font-size="11" font-weight="700">REACT.JS &amp; TAILWIND</text>
+    
+    <text class="sans" x="24" y="156" fill="#94A3B8" font-size="13.5" line-height="20px">
+      <tspan x="24" dy="0">Crafting cinematic, responsive frontends</tspan>
+      <tspan x="24" dy="20">with modern component lifecycles,</tspan>
+      <tspan x="24" dy="20">seamless state synchronization, and</tspan>
+      <tspan x="24" dy="20">ergonomic, user-first UI journeys.</tspan>
+    </text>
+
+    <!-- Tech Badges -->
+    <g transform="translate(24, 252)">
+      <rect x="0" y="0" width="75" height="26" rx="6" fill="#0F172A" stroke="#334155" />
+      <text class="badge" x="37" y="17" text-anchor="middle">React.js</text>
+
+      <rect x="83" y="0" width="85" height="26" rx="6" fill="#0F172A" stroke="#334155" />
+      <text class="badge" x="125" y="17" text-anchor="middle">JavaScript</text>
+
+      <rect x="176" y="0" width="85" height="26" rx="6" fill="#0F172A" stroke="#334155" />
+      <text class="badge" x="218" y="17" text-anchor="middle">TypeScript</text>
+
+      <rect x="269" y="0" width="70" height="26" rx="6" fill="#0F172A" stroke="#334155" />
+      <text class="badge" x="304" y="17" text-anchor="middle">Tailwind</text>
+    </g>
+  </g>
+
+  <!-- Pillar 3: Cross-Ocean Mobile -->
+  <g transform="translate(855, 165)">
+    <rect class="card-box" x="0" y="0" width="365" height="310" />
+    
+    <!-- Top Icon Badge -->
+    <rect x="24" y="24" width="48" height="48" rx="12" fill="#4C0519" stroke="#E11D48" stroke-width="1.2" />
+    <text class="sans" x="48" y="55" text-anchor="middle" font-size="24">📱</text>
+    
+    <text class="serif" x="24" y="105" fill="#F8FAFC" font-size="20" font-weight="bold">Cross-Ocean Mobile</text>
+    <text class="mono" x="24" y="125" fill="#FB7185" font-size="11" font-weight="700">KOTLIN &amp; FLUTTER</text>
+    
+    <text class="sans" x="24" y="156" fill="#94A3B8" font-size="13.5" line-height="20px">
+      <tspan x="24" dy="0">Building native Android capabilities</tspan>
+      <tspan x="24" dy="20">in Kotlin alongside multi-platform</tspan>
+      <tspan x="24" dy="20">Flutter builds powered by real-time</tspan>
+      <tspan x="24" dy="20">Firebase auth and offline-first SQLite.</tspan>
+    </text>
+
+    <!-- Tech Badges -->
+    <g transform="translate(24, 252)">
+      <rect x="0" y="0" width="85" height="26" rx="6" fill="#0F172A" stroke="#334155" />
+      <text class="badge" x="42" y="17" text-anchor="middle">Kotlin App</text>
+
+      <rect x="93" y="0" width="85" height="26" rx="6" fill="#0F172A" stroke="#334155" />
+      <text class="badge" x="135" y="17" text-anchor="middle">Flutter/Dart</text>
+
+      <rect x="186" y="0" width="75" height="26" rx="6" fill="#0F172A" stroke="#334155" />
+      <text class="badge" x="223" y="17" text-anchor="middle">Firebase</text>
+
+      <rect x="269" y="0" width="65" height="26" rx="6" fill="#0F172A" stroke="#334155" />
+      <text class="badge" x="301" y="17" text-anchor="middle">SQLite</text>
+    </g>
+  </g>
+</svg>

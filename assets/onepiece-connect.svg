@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" width="1280" height="440">
+  <defs>
+    <linearGradient id="conn-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070C16" />
+      <stop offset="100%" stop-color="#111B30" />
+    </linearGradient>
+    <linearGradient id="conn-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="50%" stop-color="#FF4500" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .panel { fill: url(#conn-bg); stroke: #1E293B; stroke-width: 1.5px; rx: 24px; }
+    .conn-card { fill: #0B1322; stroke: #1E293B; stroke-width: 1.2px; rx: 14px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .serif { font-family: Georgia, 'Times New Roman', serif; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  </style>
+
+  <!-- Panel Base -->
+  <rect class="panel" x="0" y="0" width="1280" height="440" />
+
+  <!-- Header -->
+  <g transform="translate(60, 48)">
+    <text class="mono" x="0" y="0" fill="#FFD700" font-size="12" font-weight="700" letter-spacing="2px">05 // PIRATE ALLIANCE &amp; DEN DEN TRANSMISSION</text>
+    <text class="serif" x="0" y="38" fill="#F8FAFC" font-size="34" font-weight="bold">READY TO FORM A FLEET ALLIANCE?</text>
+    <text class="sans" x="0" y="66" fill="#94A3B8" font-size="15">
+      Seeking a reliable First Mate, Full-Stack Engineer, or System Architect for your next high-seas expedition? Connect below!
+    </text>
+    <line x1="0" y1="84" x2="1160" y2="84" stroke="url(#conn-line)" stroke-width="2" />
+  </g>
+
+  <!-- 4 Interactive Link Cards -->
+  <g transform="translate(60, 165)">
+    <!-- 1. Portfolio Log Pose -->
+    <g transform="translate(0, 0)">
+      <rect class="conn-card" x="0" y="0" width="270" height="210" />
+      <rect x="20" y="20" width="46" height="46" rx="10" fill="#0C4A6E" stroke="#0284C7" />
+      <text class="sans" x="43" y="52" text-anchor="middle" font-size="22">🧭</text>
+      
+      <text class="serif" x="20" y="98" fill="#F8FAFC" font-size="18" font-weight="bold">Portfolio Log Pose</text>
+      <text class="mono" x="20" y="118" fill="#38BDF8" font-size="10.5" font-weight="700">PERSONAL SHOWCASE</text>
+      <text class="sans" x="20" y="146" fill="#94A3B8" font-size="12.5">Explore shipped projects and live interactive demos.</text>
+      
+      <text class="mono" x="20" y="186" fill="#FFD700" font-size="11.5" font-weight="600">→ rida-taki.vercel.app</text>
+    </g>
+
+    <!-- 2. LinkedIn Vivre Card -->
+    <g transform="translate(295, 0)">
+      <rect class="conn-card" x="0" y="0" width="270" height="210" />
+      <rect x="20" y="20" width="46" height="46" rx="10" fill="#172554" stroke="#2563EB" />
+      <text class="sans" x="43" y="52" text-anchor="middle" font-size="22">📜</text>
+      
+      <text class="serif" x="20" y="98" fill="#F8FAFC" font-size="18" font-weight="bold">LinkedIn Vivre Card</text>
+      <text class="mono" x="20" y="118" fill="#60A5FA" font-size="10.5" font-weight="700">PROFESSIONAL NETWORK</text>
+      <text class="sans" x="20" y="146" fill="#94A3B8" font-size="12.5">Track my journey, career milestones, and network.</text>
+      
+      <text class="mono" x="20" y="186" fill="#FFD700" font-size="11.5" font-weight="600">→ /in/rida-taki-bb44a8350</text>
+    </g>
+
+    <!-- 3. Den Den Mushi (Email) -->
+    <g transform="translate(590, 0)">
+      <rect class="conn-card" x="0" y="0" width="270" height="210" />
+      <rect x="20" y="20" width="46" height="46" rx="10" fill="#450A0A" stroke="#DC2626" />
+      <text class="sans" x="43" y="52" text-anchor="middle" font-size="22">🐌</text>
+      
+      <text class="serif" x="20" y="98" fill="#F8FAFC" font-size="18" font-weight="bold">Den Den Mushi</text>
+      <text class="mono" x="20" y="118" fill="#F87171" font-size="10.5" font-weight="700">DIRECT INBOX FREQUENCY</text>
+      <text class="sans" x="20" y="146" fill="#94A3B8" font-size="12.5">Reach out directly for contracts, teams, or questions.</text>
+      
+      <text class="mono" x="20" y="186" fill="#FFD700" font-size="11.5" font-weight="600">→ takirida72@gmail.com</text>
+    </g>
+
+    <!-- 4. Grand Fleet (GitHub) -->
+    <g transform="translate(885, 0)">
+      <rect class="conn-card" x="0" y="0" width="275" height="210" />
+      <rect x="20" y="20" width="46" height="46" rx="10" fill="#3B0764" stroke="#9333EA" />
+      <text class="sans" x="43" y="52" text-anchor="middle" font-size="22">🏴‍☠️</text>
+      
+      <text class="serif" x="20" y="98" fill="#F8FAFC" font-size="18" font-weight="bold">Mugiwara Fleet</text>
+      <text class="mono" x="20" y="118" fill="#C084FC" font-size="10.5" font-weight="700">SOURCE CODE REPOSITORIES</text>
+      <text class="sans" x="20" y="146" fill="#94A3B8" font-size="12.5">Inspect open-source codebases and public branches.</text>
+      
+      <text class="mono" x="20" y="186" fill="#FFD700" font-size="11.5" font-weight="600">→ github.com/Rida1019-taki</text>
+    </g>
+  </g>
+</svg>

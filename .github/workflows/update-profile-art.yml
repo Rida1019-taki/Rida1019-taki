@@ -23,8 +23,8 @@ jobs:
         env:
           GH_PROFILE_USER: Rida1019-taki
       - run: python scripts/render_heatmap_svg.py
-      - run: python scripts/render_stats_card.py
+      - run: python scripts/generate_onepiece_profile.py
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: refresh contribution graph [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg assets/contrib-heatmap.svg assets/github-stats.svg"
+          commit_message: "chore: refresh Grand Line log and pirate metrics [skip ci]"
+          file_pattern: "data/contributions.json contrib-heatmap.svg assets/onepiece-heatmap.svg assets/onepiece-wanted-dashboard.svg assets/onepiece-hero.svg"

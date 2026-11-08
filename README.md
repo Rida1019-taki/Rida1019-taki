@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- 🎬 00 // HERO: GRAND LINE LOG POSE BROADCAST -->
-<img src="assets/onepiece-hero.svg?v=4" alt="Ahoy, I'm Rida Taki — Full-Stack &amp; Mobile Developer" width="100%"/>
+<img src="assets/onepiece-hero.svg?v=5" alt="Ahoy, I'm Rida Taki — Full-Stack &amp; Mobile Developer" width="100%"/>
 
 <br/><br/>
 
@@ -11,22 +11,22 @@
 <br/><br/>
 
 <!-- 🏴‍☠️ 01 // MY PIRATE CODE: THE WILL OF D -->
-<img src="assets/onepiece-code.svg?v=4" alt="My Pirate Code — The Will of D in every commit" width="100%"/>
+<img src="assets/onepiece-code.svg?v=5" alt="My Pirate Code — The Will of D in every commit" width="100%"/>
 
 <br/><br/>
 
 <!-- ⚡ 02 // DEVIL FRUIT & HAKI ARSENAL -->
-<img src="assets/onepiece-haki-stack.svg?v=4" alt="Devil Fruit &amp; Haki Arsenal — Tech Stack" width="100%"/>
+<img src="assets/onepiece-haki-stack.svg?v=5" alt="Devil Fruit &amp; Haki Arsenal — Tech Stack" width="100%"/>
 
 <br/><br/>
 
 <!-- 🪪 03 // PIRATE WANTED POSTER & FLEET DASHBOARD -->
-<img src="assets/onepiece-wanted-dashboard.svg?v=4" alt="Marine Wanted Poster 552M Berries and Grand Line Fleet Dashboard" width="100%"/>
+<img src="assets/onepiece-wanted-dashboard.svg?v=5" alt="Marine Wanted Poster 552M Berries and Grand Line Fleet Dashboard" width="100%"/>
 
 <br/><br/>
 
 <!-- ⚔️ 04 // GRAND LINE LEGENDARY VOYAGES -->
-<img src="assets/onepiece-voyages.svg?v=4" alt="Grand Line Legendary Voyages — Featured Products &amp; Expeditions" width="100%"/>
+<img src="assets/onepiece-voyages.svg?v=5" alt="Grand Line Legendary Voyages — Featured Products &amp; Expeditions" width="100%"/>
 
 <p align="center">
   <a href="https://github.com/Rida1019-taki"><img src="https://img.shields.io/badge/HealthCare+-f59e0b?style=for-the-badge&amp;logo=github&amp;logoColor=ffd700&amp;labelColor=0f172a" alt="HealthCare+ Repository"/></a>
@@ -51,12 +51,12 @@
 
 *Every commit charts another nautical league across the digital sea — rebuilt automatically every day.*
 
-<img src="assets/onepiece-heatmap.svg?v=4" alt="Grand Line 552 Nautical Miles Log" width="100%"/>
+<img src="assets/onepiece-heatmap.svg?v=5" alt="Grand Line 552 Nautical Miles Log" width="100%"/>
 
 <br/><br/>
 
 <!-- 🐌 05 // JOIN THE CREW: DEN DEN MUSHI ALLIANCE -->
-<img src="assets/onepiece-connect.svg?v=4" alt="Join the Crew — Den Den Mushi Transmission" width="100%"/>
+<img src="assets/onepiece-connect.svg?v=5" alt="Join the Crew — Den Den Mushi Transmission" width="100%"/>
 
 <p align="center">
   <a href="https://rida-taki.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-f59e0b?style=for-the-badge&amp;logo=vercel&amp;logoColor=070c16&amp;labelColor=0f172a" alt="Portfolio Website"/></a>

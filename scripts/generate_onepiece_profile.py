@@ -15,10 +15,18 @@ DATA_DIR = os.path.join(ROOT, "data")
 
 os.makedirs(ASSETS, exist_ok=True)
 
-# Load base64 photo
+# Load base64 photo for hero circle
 photo_path = os.path.join(DATA_DIR, "photo_b64.txt")
 with open(photo_path, "r", encoding="utf-8") as f:
     PHOTO_B64 = f.read().strip()
+
+# Load processed wanted photo with warm parchment background blend
+wanted_photo_path = os.path.join(DATA_DIR, "wanted_photo_b64.txt")
+if os.path.exists(wanted_photo_path):
+    with open(wanted_photo_path, "r", encoding="utf-8") as f:
+        WANTED_PHOTO_B64 = f.read().strip()
+else:
+    WANTED_PHOTO_B64 = PHOTO_B64
 
 # Load contributions data
 contrib_path = os.path.join(DATA_DIR, "contributions.json")
@@ -97,20 +105,16 @@ def make_hero_svg():
     .ring-ccw {{ transform-origin: 1030px 280px; animation: orbit-ccw 16s linear infinite; }}
   </style>
 
-  <!-- Panel Base -->
   <rect class="panel" x="0" y="0" width="1280" height="560" />
 
-  <!-- Log Pose / Viewfinder Corner Brackets -->
   <path class="corner-bracket" d="M 32 60 L 32 32 L 60 32" />
   <path class="corner-bracket" d="M 1248 60 L 1248 32 L 1220 32" />
   <path class="corner-bracket" d="M 32 500 L 32 528 L 60 528" />
   <path class="corner-bracket" d="M 1248 500 L 1248 528 L 1220 528" />
 
-  <!-- Coordinates & Viewfinder Data -->
   <text class="mono" x="72" y="44" fill="#94A3B8" font-size="11" letter-spacing="1.5px">NAV-LOG // NEW WORLD: [35°41'N · 139°46'E] • GRAND LINE SECTOR 7</text>
   <text class="mono" x="1208" y="44" text-anchor="end" fill="#FFD700" font-size="11" letter-spacing="1px">VESSEL: THOUSAND SUNNY MK-IV</text>
 
-  <!-- Left Content: Pirate Identification -->
   <g transform="translate(68, 90)">
     <rect x="0" y="0" width="310" height="30" rx="15" fill="#1E293B" stroke="#334155" stroke-width="1" />
     <circle class="live-dot" cx="16" cy="15" r="5" fill="#10B981" />
@@ -444,14 +448,16 @@ def make_wanted_dashboard_svg():
       <stop offset="100%" stop-color="#0F172A" />
     </linearGradient>
 
+    <!-- Warm Parchment Paper Background -->
     <linearGradient id="parchment" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#F2DFCA" />
       <stop offset="50%" stop-color="#E8CEB0" />
       <stop offset="100%" stop-color="#DCBE9B" />
     </linearGradient>
 
+    <!-- Precise Clip Path for Wanted Poster Photo (Matched to Frame) -->
     <clipPath id="wanted-clip">
-      <rect x="95" y="150" width="310" height="255" rx="6" />
+      <rect x="47" y="147" width="316" height="261" rx="4" />
     </clipPath>
   </defs>
 
@@ -467,35 +473,52 @@ def make_wanted_dashboard_svg():
 
   <rect class="panel" x="0" y="0" width="1280" height="640" />
 
-  <!-- LEFT: WANTED POSTER -->
+  <!-- ==================== LEFT: AUTHENTIC ONE PIECE WANTED POSTER ==================== -->
   <g transform="translate(45, 30)">
+    <!-- Parchment Sheet (Width 410, Height 580) -->
     <rect x="0" y="0" width="410" height="580" rx="14" fill="url(#parchment)" stroke="#8C6239" stroke-width="2.5" />
     <rect x="14" y="14" width="382" height="552" rx="8" fill="none" stroke="#5C3A21" stroke-width="1.8" />
     <rect x="20" y="20" width="370" height="540" rx="6" fill="none" stroke="#8C6239" stroke-width="0.8" />
 
+    <!-- Marine Header Text -->
     <text class="marine-text" x="205" y="58" text-anchor="middle" fill="#3D2314" font-size="28">M A R I N E</text>
+
+    <!-- WANTED Title -->
     <text class="wanted-font" x="205" y="125" text-anchor="middle" fill="#2E1708" font-size="64">WANTED</text>
 
-    <rect x="45" y="145" width="320" height="265" fill="#CBB296" stroke="#5C3A21" stroke-width="2" rx="4" />
-    <image clip-path="url(#wanted-clip)" x="50" y="150" width="310" height="255" href="data:image/jpeg;base64,{PHOTO_B64}" preserveAspectRatio="xMidYMid slice" />
+    <!-- Photo Frame (Width 320, perfectly centered at x=45 on 410 sheet) -->
+    <rect x="45" y="145" width="320" height="265" fill="#C5AA8E" stroke="#5C3A21" stroke-width="2.5" rx="6" />
 
-    <text class="marine-text" x="205" y="440" text-anchor="middle" fill="#3D2314" font-size="22">DEAD OR ALIVE</text>
-    <text class="wanted-font" x="205" y="488" text-anchor="middle" fill="#1C0E05" font-size="34">RIDA TAKI</text>
+    <!-- Rida Portrait Processed with Warm Parchment Background -->
+    <image clip-path="url(#wanted-clip)" x="47" y="147" width="316" height="261" href="data:image/jpeg;base64,{WANTED_PHOTO_B64}" preserveAspectRatio="xMidYMid slice" />
 
-    <g transform="translate(48, 532)">
-      <text class="serif" x="0" y="0" fill="#2E1708" font-size="28" font-weight="bold">฿</text>
-      <text class="wanted-font" x="30" y="-2" fill="#2E1708" font-size="30" letter-spacing="2px">552,000,000 -</text>
+    <!-- Subtle Inner Border Overlay -->
+    <rect x="47" y="147" width="316" height="261" rx="4" fill="none" stroke="#5C3A21" stroke-width="1.5" opacity="0.6" />
+
+    <!-- DEAD OR ALIVE banner (Centered at x=205) -->
+    <text class="marine-text" x="205" y="442" text-anchor="middle" fill="#3D2314" font-size="22">DEAD OR ALIVE</text>
+
+    <!-- Pirate Name (Centered at x=205) -->
+    <text class="wanted-font" x="205" y="490" text-anchor="middle" fill="#1C0E05" font-size="36">RIDA TAKI</text>
+
+    <!-- Berry Symbol & Bounty (Centered at x=190) -->
+    <g transform="translate(190, 536)">
+      <text class="serif" x="0" y="0" text-anchor="middle" font-size="28" font-weight="bold">
+        <tspan fill="#2E1708">฿ </tspan>
+        <tspan font-family="'Impact', 'Arial Black', sans-serif" font-size="30" letter-spacing="2px">552,000,000 -</tspan>
+      </text>
     </g>
 
-    <g transform="translate(325, 510)">
-      <circle cx="0" cy="0" r="28" fill="#991B1B" opacity="0.85" />
-      <circle cx="0" cy="0" r="24" fill="none" stroke="#FEE2E2" stroke-width="1.2" stroke-dasharray="3 2" />
-      <text class="mono" x="0" y="-4" text-anchor="middle" fill="#FEE2E2" font-size="7" font-weight="bold">GRAND LINE</text>
-      <text class="mono" x="0" y="8" text-anchor="middle" fill="#FEE2E2" font-size="8" font-weight="bold">VERIFIED</text>
+    <!-- Marine Red Wax Stamp (Bottom Right, perfectly offset) -->
+    <g transform="translate(345, 515)">
+      <circle cx="0" cy="0" r="26" fill="#991B1B" opacity="0.88" />
+      <circle cx="0" cy="0" r="22" fill="none" stroke="#FEE2E2" stroke-width="1.2" stroke-dasharray="3 2" />
+      <text class="mono" x="0" y="-4" text-anchor="middle" fill="#FEE2E2" font-size="6.5" font-weight="bold">GRAND LINE</text>
+      <text class="mono" x="0" y="7" text-anchor="middle" fill="#FEE2E2" font-size="7.5" font-weight="bold">VERIFIED</text>
     </g>
   </g>
 
-  <!-- RIGHT: DASHBOARD -->
+  <!-- ==================== RIGHT: PIRATE LOG & VOYAGE DASHBOARD ==================== -->
   <g transform="translate(500, 48)">
     <text class="mono" x="0" y="0" fill="#FFD700" font-size="12" font-weight="700" letter-spacing="2px">03 // PIRATE REGISTRATION &amp; MISSION LOG</text>
     <text class="serif" x="0" y="36" fill="#F8FAFC" font-size="32" font-weight="bold">GRAND LINE FLEET DASHBOARD</text>

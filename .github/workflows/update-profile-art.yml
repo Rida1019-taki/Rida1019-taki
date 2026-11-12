@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 jobs:
-  heatmap:
+  cards:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,12 +19,15 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r scripts/requirements.txt
-      - run: python scripts/fetch_contributions.py
+      - name: Fetch GitHub contribution data
+        run: python scripts/fetch_contributions.py
         env:
           GH_PROFILE_USER: Rida1019-taki
-      - run: python scripts/render_heatmap_svg.py
-      - run: python scripts/generate_onepiece_profile.py
+      - name: Render README cards (hero, tiles, activity, repos, heatmap)
+        run: python scripts/render_readme_cards.py
+        env:
+          GH_PROFILE_USER: Rida1019-taki
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: refresh Grand Line log and pirate metrics [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg assets/onepiece-heatmap.svg assets/onepiece-wanted-dashboard.svg assets/onepiece-hero.svg assets/onepiece-voyages.svg"
+          commit_message: "chore: refresh README SVG cards [skip ci]"
+          file_pattern: "data/contributions.json cards/*.svg"

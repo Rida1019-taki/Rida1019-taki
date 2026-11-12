@@ -177,15 +177,12 @@ def hero():
     )
     portrait = []
     for i, (y, txt) in enumerate(rows):
-        # Clean faint right-edge background noise where separated by whitespace
-        clean = re.sub(r"\s+[`:-]+$", "", txt)
-        padded = clean.ljust(len(txt))
         portrait.append(
-            f'<text class="f" style="animation-delay:{0.25 + i * 0.018:.3f}s;animation-duration:.35s" '
-            f'xml:space="preserve" x="20" y="{y}" fill="{INK_SOFT}" font-size="8.0" '
-            f'textLength="800" lengthAdjust="spacing">{padded}</text>'
+            f'<text class="f" style="animation-delay:{0.25 + i * 0.014:.3f}s;animation-duration:.35s" '
+            f'xml:space="preserve" x="20" y="{y}" fill="{INK_SOFT}" font-size="9.8" '
+            f'textLength="773" lengthAdjust="spacing">{txt}</text>'
         )
-    s = 0.43
+    s = 0.45
     body = f"""
 <defs>
   <clipPath id="hero-clip"><rect width="{W}" height="{h}" rx="14"/></clipPath>
@@ -224,7 +221,7 @@ def hero():
   <text x="48" y="392" font-family="{MONO}" font-size="13" fill="{GOLD}">{SITE_URL}</text>
   <text class="nu" x="206" y="392" font-family="{MONO}" font-size="13" fill="{BRAND}">&#8599;</text>
 </g>
-<g transform="translate(502 42) scale({s}) translate(-20 -37)" font-family="{MONO}">
+<g transform="translate(502 36) scale({s}) translate(-20 -37)" font-family="{MONO}">
   {''.join(portrait)}
 </g>
 """

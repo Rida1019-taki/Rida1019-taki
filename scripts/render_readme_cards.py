@@ -496,6 +496,79 @@ def heatmap(data):
     )
 
 
+# ---- 6 · footer link buttons (matched 4-column bar) --------------------------
+LINK_W, LINK_H = (W - 3 * GAP) / 4, 58  # 211px each + 12px gaps = 880px
+
+LINKS = [
+    (
+        "portfolio",
+        "PORTFOLIO",
+        "www.ridataki.dev",
+        BRAND,
+        '<circle cx="8" cy="8" r="6" fill="none" stroke="{c}" stroke-width="1.5"/>'
+        '<ellipse cx="8" cy="8" rx="2.8" ry="6" fill="none" stroke="{c}" stroke-width="1.2"/>'
+        '<line x1="2" y1="8" x2="14" y2="8" stroke="{c}" stroke-width="1.2"/>',
+    ),
+    (
+        "linkedin",
+        "CONNECT",
+        "LinkedIn",
+        BLUE,
+        '<rect x="2" y="2" width="12" height="12" rx="2.5" fill="none" stroke="{c}" stroke-width="1.5"/>'
+        '<circle cx="5.2" cy="5.5" r="0.9" fill="{c}"/>'
+        '<path d="M5.2 7.5v4M8 11.5V7.5m0 1.4c0-1 .8-1.6 1.7-1.6 1 0 1.5.7 1.5 1.8v2.4" '
+        'fill="none" stroke="{c}" stroke-width="1.4" stroke-linecap="round"/>',
+    ),
+    (
+        "email",
+        "DIRECT MAIL",
+        "Email",
+        GOLD,
+        '<rect x="1.8" y="3.2" width="12.4" height="9.6" rx="2" fill="none" stroke="{c}" stroke-width="1.5"/>'
+        '<path d="M2.4 4.2L8 8.8l5.6-4.6" fill="none" stroke="{c}" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>',
+    ),
+    (
+        "repos",
+        "OPEN SOURCE",
+        "Repositories",
+        EMERALD,
+        '<circle cx="5" cy="4.2" r="1.6" fill="none" stroke="{c}" stroke-width="1.4"/>'
+        '<circle cx="5" cy="11.8" r="1.6" fill="none" stroke="{c}" stroke-width="1.4"/>'
+        '<circle cx="11.2" cy="6.2" r="1.6" fill="none" stroke="{c}" stroke-width="1.4"/>'
+        '<path d="M5 5.8v4.4M11.2 7.8c0 2-6.2 1.2-6.2 2.4" fill="none" stroke="{c}" stroke-width="1.4" stroke-linecap="round"/>',
+    ),
+]
+
+
+def link_cards():
+    for i, (slug, eyebrow, title, color, icon_tpl) in enumerate(LINKS):
+        delay = 5.0 + i * 0.08
+        icon = icon_tpl.format(c=color)
+        body = f"""
+<rect x="0.5" y="0.5" width="{LINK_W - 1}" height="{LINK_H - 1}" rx="12" fill="{SURFACE}" stroke="{BORDER}"/>
+<g class="r" {d(delay)}>
+  <rect x="12" y="14" width="30" height="30" rx="8" fill="{SURFACE_2}" stroke="{color}" stroke-opacity=".35"/>
+  <g transform="translate(19 21)">{icon}</g>
+  <text x="51" y="23" font-family="{MONO}" font-size="9" letter-spacing="1" fill="{MUTED}">{eyebrow}</text>
+  <text x="51" y="40" font-family="{HEADING}" font-weight="700" font-size="13" fill="{INK}">{escape(title)}</text>
+  <text class="nu" x="{LINK_W - 21:.1f}" y="34" font-family="{MONO}" font-size="12.5" fill="{color}">&#8599;</text>
+</g>
+"""
+        write(
+            f"link-{slug}.svg",
+            svg(
+                LINK_W,
+                LINK_H,
+                body,
+                ["head-700", "mono-400"],
+                f"{eyebrow}: {title}",
+                left=3 * i,
+                right=9 - 3 * i,
+                bottom=0,
+            ),
+        )
+
+
 def fetch_github_meta():
     repo_count = DEFAULT_PUBLIC_REPOS
     meta = {}
@@ -563,3 +636,4 @@ if __name__ == "__main__":
     section_title("What I'm", "coding", "dark")
     section_title("What I'm", "coding", "light")
     heatmap(data)
+    link_cards()

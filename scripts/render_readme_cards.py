@@ -2,7 +2,7 @@
 """
 Render Rida Taki's GitHub profile README cards as animated SVGs into cards/.
 
-Matched to https://rida-taki.vercel.app/ (warm dark obsidian #1a1714, ivory ink
+Matched to https://www.ridataki.dev/ (warm dark obsidian #1a1714, ivory ink
 #f2ece4, terracotta #e07040, luxury gold #d4a853, sapphire blue #5a8fd4;
 Plus Jakarta Sans, Outfit, JetBrains Mono).
 
@@ -29,14 +29,14 @@ FONTS = os.path.join(ROOT, "fonts")
 PORTRAIT = os.path.join(ROOT, "avi-ascii.svg")
 
 USERNAME = os.environ.get("GH_PROFILE_USER", "Rida1019-taki")
-SITE_URL = "rida-taki.vercel.app"
+SITE_URL = "www.ridataki.dev"
 
 # ---- fallback counts (overridden live from GitHub API when reachable) -------
 DEFAULT_PUBLIC_REPOS = 45
 HACKATHONS_COUNT = "3"
 CERTS_COUNT = "3"
 
-# ---- brand tokens (matched to rida-taki.vercel.app) -------------------------
+# ---- brand tokens (matched to www.ridataki.dev) -------------------------
 BG = "#0e0c0b"
 SURFACE = "#1a1714"
 SURFACE_2 = "#231f1b"
@@ -219,7 +219,7 @@ def hero():
 </g>
 <g class="f" {d(0.80)}>
   <text x="48" y="392" font-family="{MONO}" font-size="13" fill="{GOLD}">{SITE_URL}</text>
-  <text class="nu" x="206" y="392" font-family="{MONO}" font-size="13" fill="{BRAND}">&#8599;</text>
+  <text class="nu" x="178" y="392" font-family="{MONO}" font-size="13" fill="{BRAND}">&#8599;</text>
 </g>
 <g transform="translate(502 36) scale({s}) translate(-20 -37)" font-family="{MONO}">
   {''.join(portrait)}
